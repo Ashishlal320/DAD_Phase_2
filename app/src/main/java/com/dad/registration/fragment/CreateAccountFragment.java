@@ -464,7 +464,7 @@ public class CreateAccountFragment extends BaseFragment {
                     if (!Utills.isMyServiceRunning(LocationBroadcastServiceNew.class, getActivity())) {
 
                         Intent serviceIntent = new Intent(getActivity(), LocationBroadcastServiceNew.class);
-                        PendingIntent pendingIntent = PendingIntent.getService(getActivity(), 1001, serviceIntent, PendingIntent.FLAG_CANCEL_CURRENT);
+                        PendingIntent pendingIntent = PendingIntent.getService(getActivity(), 1001, serviceIntent, PendingIntent.FLAG_MUTABLE);
                         AlarmManager alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
                         alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), time, pendingIntent);
 
@@ -486,7 +486,7 @@ public class CreateAccountFragment extends BaseFragment {
                     } else {
 
                         Toast.makeText(getActivity(), getString(R.string.TAG_REG_SUC_MSG), Toast.LENGTH_SHORT).show();
-//                        ((MainActivity) getActivity()).replaceFragment(new DashBoardWithSwipableFragment());
+                       ((MainActivity) getActivity()).replaceFragment(new DashBoardWithSwipableFragment());
                     }
 
                 } else {
@@ -732,7 +732,7 @@ public class CreateAccountFragment extends BaseFragment {
     private void startBackgroundThreadForBLE() {
         AlarmManager alarmManagerForBLE = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
         Intent intent = new Intent(getActivity(), BleReceiver.class);
-        PendingIntent broadcastIntentBle = PendingIntent.getBroadcast(getActivity(), 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent broadcastIntentBle = PendingIntent.getBroadcast(getActivity(), 0, intent, PendingIntent.FLAG_MUTABLE);
         alarmManagerForBLE.setInexactRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP, SystemClock.elapsedRealtime(), 2 * 60 * SCAN_PERIOD, broadcastIntentBle);
     }
 

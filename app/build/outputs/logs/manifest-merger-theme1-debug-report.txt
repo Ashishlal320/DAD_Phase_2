@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-160:12
-INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-160:12
-INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-160:12
-INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-160:12
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-161:12
+INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-161:12
+INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-161:12
+INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-161:12
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\e42c0fe5246b8cd70c2107f07ca5c644\transformed\circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.material:material:1.6.0] C:\Users\lenovo\.gradle\caches\transforms-3\8ed122368fef807487b8f2e8a1d00119\transformed\material-1.6.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\lenovo\.gradle\caches\transforms-3\b098268397b2765e2124d4a22d2a84f6\transformed\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
@@ -68,22 +68,22 @@ MERGED from [com.crashlytics.sdk.android:answers:1.4.7] C:\Users\lenovo\.gradle\
 MERGED from [io.fabric.sdk.android:fabric:1.4.8] C:\Users\lenovo\.gradle\caches\transforms-3\c9fdffed7717d2e4b0983844f11dccd6\transformed\fabric-1.4.8\AndroidManifest.xml:22:1-33:12
 MERGED from [androidx.test.espresso:espresso-idling-resource:3.1.0-alpha3] C:\Users\lenovo\.gradle\caches\transforms-3\fac18a1e5bba5bc18c59d1b993ef5231\transformed\espresso-idling-resource-3.1.0-alpha3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\99597b908ff2ddf6ef936b16500c4cec\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-160:12
-INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-160:12
-INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-160:12
+INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-161:12
+INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-161:12
+INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-161:12
 	package
 		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:4:5-22
 		INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml
 		INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-160:12
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-161:12
 		INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-160:12
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-161:12
 		INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:11-69
@@ -193,34 +193,38 @@ uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
 ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:27:5-88
 	android:name
 		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:27:22-85
+uses-permission#android.permission.BLUETOOTH_CONNECT
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:28:5-76
+	android:name
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:28:22-73
 uses-feature#android.hardware.location.gps
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:29:5-66
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:30:5-66
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:29:19-63
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:30:19-63
 permission#com.tigerlight.dad.permission.C2D_MESSAGE
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:31:5-33:47
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:32:5-34:47
 	android:protectionLevel
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:33:9-44
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:34:9-44
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:32:9-65
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:33:9-65
 uses-permission#com.tigerlight.dad.permission.C2D_MESSAGE
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:35:5-81
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:36:5-81
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:35:22-78
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:36:22-78
 uses-feature#android.hardware.camera
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:42:5-44:35
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:43:5-45:35
 	android:required
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:44:9-32
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:45:9-32
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:43:9-47
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:44:9-47
 uses-feature#android.hardware.bluetooth_le
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:45:5-47:35
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:46:5-48:35
 	android:required
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:47:9-32
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:48:9-32
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:46:9-53
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:47:9-53
 application
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:52:5-158:19
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:53:5-159:19
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\e42c0fe5246b8cd70c2107f07ca5c644\transformed\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\e42c0fe5246b8cd70c2107f07ca5c644\transformed\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.6.0] C:\Users\lenovo\.gradle\caches\transforms-3\8ed122368fef807487b8f2e8a1d00119\transformed\material-1.6.0\AndroidManifest.xml:24:5-20
@@ -266,171 +270,171 @@ MERGED from [com.crashlytics.sdk.android:answers:1.4.7] C:\Users\lenovo\.gradle\
 MERGED from [io.fabric.sdk.android:fabric:1.4.8] C:\Users\lenovo\.gradle\caches\transforms-3\c9fdffed7717d2e4b0983844f11dccd6\transformed\fabric-1.4.8\AndroidManifest.xml:31:5-20
 MERGED from [io.fabric.sdk.android:fabric:1.4.8] C:\Users\lenovo\.gradle\caches\transforms-3\c9fdffed7717d2e4b0983844f11dccd6\transformed\fabric-1.4.8\AndroidManifest.xml:31:5-20
 	android:requestLegacyExternalStorage
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:56:9-52
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:57:9-52
 	tools:ignore
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:60:9-48
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:61:9-48
 	android:largeHeap
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:55:9-33
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:56:9-33
 	android:icon
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:62:9-42
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:63:9-42
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.5.0] C:\Users\lenovo\.gradle\caches\transforms-3\304a7233d769ff1cffdb2318980d3bb3\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:64:9-35
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:65:9-35
 	android:label
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:63:9-41
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:64:9-41
 	android:hardwareAccelerated
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:57:9-43
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:58:9-43
 	tools:targetApi
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:67:9-28
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:68:9-28
 	android:allowBackup
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:54:9-35
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:55:9-35
 	android:theme
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:65:9-40
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:66:9-40
 	tools:replace
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:66:9-100
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:67:9-100
 	android:usesCleartextTraffic
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:59:9-44
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:60:9-44
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:53:9-39
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:54:9-39
 activity#com.dad.home.SplashActivity
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:68:9-80:20
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:69:9-81:20
 	android:screenOrientation
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:73:13-49
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:74:13-49
 	android:exported
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:72:13-36
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:73:13-36
 	android:configChanges
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:71:13-74
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:72:13-74
 	android:alwaysRetainTaskState
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:70:13-49
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:71:13-49
 	android:theme
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:74:13-51
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:75:13-51
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:69:13-48
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:70:13-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:75:13-79:29
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:76:13-80:29
 action#android.intent.action.MAIN
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:76:17-69
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:77:17-69
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:76:25-66
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:77:25-66
 category#android.intent.category.LAUNCHER
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:78:17-77
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:79:17-77
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:78:27-74
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:79:27-74
 activity#com.dad.registration.activity.MainActivity
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:81:9-84:54
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:82:9-85:54
 	android:screenOrientation
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:83:13-49
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:84:13-49
 	android:theme
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:84:13-51
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:85:13-51
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:82:13-63
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:83:13-63
 activity#com.dad.cropimage.CropImage
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:85:9-57
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:86:9-57
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:85:19-54
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:86:19-54
 activity#com.dad.simplecropping.CropImage
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:86:9-62
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:87:9-62
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:86:19-59
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:87:19-59
 receiver#com.dad.GcmBroadcastReceiver
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:88:9-99:20
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:89:9-100:20
 	android:exported
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:90:13-36
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:91:13-36
 	android:permission
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:91:13-73
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:92:13-73
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:89:13-49
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:90:13-49
 intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+action:name:com.google.android.c2dm.intent.REGISTRATION+category:name:com.tigerlight.dad
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:92:13-98:29
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:93:13-99:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:93:17-81
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:94:17-81
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:93:25-78
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:94:25-78
 action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:95:17-86
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:96:17-86
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:95:25-83
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:96:25-83
 category#com.tigerlight.dad
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:97:17-63
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:98:17-63
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:97:27-60
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:98:27-60
 receiver#com.dad.blework.BootReceiver
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:100:9-107:20
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:101:9-108:20
 	android:enabled
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:102:13-35
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:103:13-35
 	android:exported
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:103:13-36
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:104:13-36
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:101:13-49
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:102:13-49
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:104:13-106:29
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:105:13-107:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:105:17-79
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:106:17-79
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:105:25-76
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:106:25-76
 receiver#com.dad.blework.AlarmReceiver
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:108:9-59
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:109:9-59
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:108:19-56
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:109:19-56
 receiver#com.dad.blework.BleReceiver
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:109:9-57
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:110:9-57
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:109:19-54
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:110:19-54
 service#com.dad.blework.BleService
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:111:9-55
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:112:9-55
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:111:18-52
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:112:18-52
 service#com.dad.GcmIntentService
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:112:9-53
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:113:9-53
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:112:18-50
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:113:18-50
 receiver#com.dad.AlarmServiceBroadcastReciever
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:114:9-121:20
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:115:9-122:20
 	android:enabled
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:116:13-35
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:117:13-35
 	android:exported
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:117:13-36
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:118:13-36
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:115:13-58
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:116:13-58
 receiver#com.dad.BleBroadCast
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:122:9-129:20
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:123:9-130:20
 	android:enabled
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:124:13-35
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:125:13-35
 	android:exported
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:125:13-36
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:126:13-36
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:123:13-41
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:124:13-41
 service#com.dad.LocationBroadcastServiceNew
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:138:9-64
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:139:9-64
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:138:18-61
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:139:18-61
 meta-data#com.google.android.geo.API_KEY
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:140:9-142:71
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:141:9-143:71
 	android:value
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:142:13-68
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:143:13-68
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:141:13-58
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:142:13-58
 meta-data#io.fabric.ApiKey
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:146:9-148:72
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:147:9-149:72
 	android:value
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:148:13-69
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:149:13-69
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:147:13-44
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:148:13-44
 receiver#com.dad.recievers.AlertSentReceiver
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:150:9-157:20
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:151:9-158:20
 	android:enabled
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:152:13-35
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:153:13-35
 	android:exported
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:153:13-37
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:154:13-37
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:151:13-56
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:152:13-56
 intent-filter#action:name:com.tigerlight.action.alert_sent
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:154:13-156:29
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:155:13-157:29
 action#com.tigerlight.action.alert_sent
-ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:155:17-75
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:156:17-75
 	android:name
-		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:155:25-72
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:156:25-72
 uses-sdk
 INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml

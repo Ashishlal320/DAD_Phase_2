@@ -66,7 +66,7 @@ public class SplashActivity extends AppCompatActivity {
             if (isLogin) {
 
                 Intent serviceIntent = new Intent(getApplicationContext(), LocationBroadcastServiceNew.class);
-                PendingIntent pendingIntent = PendingIntent.getService(getApplicationContext(), 1001, serviceIntent, PendingIntent.FLAG_CANCEL_CURRENT);
+                PendingIntent pendingIntent = PendingIntent.getService(getApplicationContext(), 1001, serviceIntent, PendingIntent.FLAG_MUTABLE);
                 AlarmManager alarmManager = (AlarmManager) getApplicationContext().getSystemService(Context.ALARM_SERVICE);
                 alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), time, pendingIntent);
 

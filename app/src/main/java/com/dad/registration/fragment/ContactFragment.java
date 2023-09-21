@@ -163,7 +163,7 @@ public class ContactFragment extends BaseFragment implements AdapterView.OnItemC
 
         if (isBleSupported && mBluetoothAdapter != null && !mBluetoothAdapter.isEnabled() && !isBTRequestDenied) {
             Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-            startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
+            //startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
             return;
         }
 
