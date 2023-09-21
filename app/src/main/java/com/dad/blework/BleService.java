@@ -11,6 +11,7 @@ import com.dad.util.Constants;
 import com.dad.util.GPSTracker;
 import com.dad.util.Preference;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.app.IntentService;
@@ -18,6 +19,7 @@ import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Handler;
@@ -31,6 +33,8 @@ import java.util.TimeZone;
 
 import static com.dad.registration.util.Utills.isInternetConnected;
 import static com.dad.util.CheckForeground.getActivity;
+
+import androidx.core.app.ActivityCompat;
 
 public class BleService extends IntentService {
     private String TAG = BleService.class.getName();
@@ -162,12 +166,32 @@ public class BleService extends IntentService {
                 @Override
                 public void run() {
                     if (mBluetoothAdapter != null) {
+                        if (ActivityCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED) {
+                            // TODO: Consider calling
+                            //    ActivityCompat#requestPermissions
+                            // here to request the missing permissions, and then overriding
+                            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                            //                                          int[] grantResults)
+                            // to handle the case where the user grants the permission. See the documentation
+                            // for ActivityCompat#requestPermissions for more details.
+                            return;
+                        }
                         mBluetoothAdapter.stopLeScan(bleHelper.getmLeScanCallback());
                     }
                 }
 
             }, 2 * 60 * SCAN_PERIOD);
             if (mBluetoothAdapter != null) {
+                if (ActivityCompat.checkSelfPermission(this, Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED) {
+                    // TODO: Consider calling
+                    //    ActivityCompat#requestPermissions
+                    // here to request the missing permissions, and then overriding
+                    //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                    //                                          int[] grantResults)
+                    // to handle the case where the user grants the permission. See the documentation
+                    // for ActivityCompat#requestPermissions for more details.
+                    return;
+                }
                 mBluetoothAdapter.startLeScan(bleHelper.getmLeScanCallback());
             }
         } else {
@@ -228,6 +252,16 @@ public class BleService extends IntentService {
 //            new PushForCrowdAlert().start();
 
             if (mBluetoothAdapter != null) {
+                if (ActivityCompat.checkSelfPermission(this, Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED) {
+                    // TODO: Consider calling
+                    //    ActivityCompat#requestPermissions
+                    // here to request the missing permissions, and then overriding
+                    //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                    //                                          int[] grantResults)
+                    // to handle the case where the user grants the permission. See the documentation
+                    // for ActivityCompat#requestPermissions for more details.
+                    return;
+                }
                 mBluetoothAdapter.stopLeScan(bleHelper.getmLeScanCallback());
 
             }

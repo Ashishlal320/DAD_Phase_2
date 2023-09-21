@@ -12,14 +12,15 @@ import android.graphics.Bitmap;
 import android.location.LocationManager;
 import android.net.Uri;
 import android.provider.Settings;
-import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
-import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageView;
+
+import androidx.core.graphics.drawable.RoundedBitmapDrawable;
+import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.BitmapImageViewTarget;
@@ -93,7 +94,7 @@ public class Util {
     }
 
     public void getCircleImageView(final Context context, String imgUrl, final ImageView imageView) {
-        Glide.with(context).load(imgUrl).asBitmap().centerCrop().into(new BitmapImageViewTarget(imageView) {
+       /* Glide.with(context).load(imgUrl).asBitmap().centerCrop().into(new BitmapImageViewTarget(imageView) {
             @Override
             protected void setResource(Bitmap resource) {
                 RoundedBitmapDrawable circularBitmapDrawable =
@@ -101,7 +102,7 @@ public class Util {
                 circularBitmapDrawable.setCircular(true);
                 imageView.setImageDrawable(circularBitmapDrawable);
             }
-        });
+        });*/
     }
 
     /**

@@ -39,7 +39,6 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
-import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -49,6 +48,8 @@ import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.core.content.ContextCompat;
 
 /**
  * AlertFragment : all alert listing

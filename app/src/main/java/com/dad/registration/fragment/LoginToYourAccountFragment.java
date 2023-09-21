@@ -29,9 +29,9 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.SystemClock;
-import android.support.v7.widget.AppCompatCheckBox;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,6 +39,9 @@ import android.view.ViewGroup;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.widget.AppCompatCheckBox;
 
 import java.io.IOException;
 
@@ -101,7 +104,9 @@ public class LoginToYourAccountFragment extends BaseFragment implements Compound
         log = ((BaseActivity) getActivity()).getLongitude();
         gcmRegistrationProcess();
 
-        startRefreshTimeTimer();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            startRefreshTimeTimer();
+        }
 
         setLogIndetails();
 
@@ -139,20 +144,21 @@ public class LoginToYourAccountFragment extends BaseFragment implements Compound
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-//        loginPreferences = getActivity().getSharedPreferences("loginPrefs", getActivity().MODE_PRIVATE);
-//        loginPrefsEditor = loginPreferences.edit();
-//        saveLogin = loginPreferences.getBoolean("saveLogin", false);
-//        if (saveLogin == true) {
-//            etUserName.setText(loginPreferences.getString("username", ""));
-//            etPassword.setText(loginPreferences.getString("password", ""));
-//            cbRememberMe.setChecked(true);
-//        } else {
-//            loginPrefsEditor.clear();
-//            loginPrefsEditor.commit();
-//        }
+        loginPreferences = getActivity().getSharedPreferences("loginPrefs", getActivity().MODE_PRIVATE);
+        loginPrefsEditor = loginPreferences.edit();
+        saveLogin = loginPreferences.getBoolean("saveLogin", false);
+        if (saveLogin) {
+            etUserName.setText(loginPreferences.getString("username", ""));
+            etPassword.setText(loginPreferences.getString("password", ""));
+            cbRememberMe.setChecked(true);
+        } else {
+            loginPrefsEditor.clear();
+            loginPrefsEditor.commit();
+        }
     }
 
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     private void startRefreshTimeTimer() {
         if (broadcast != null) {
             alarmManager.cancel(broadcast);
@@ -161,7 +167,9 @@ public class LoginToYourAccountFragment extends BaseFragment implements Compound
         if (refreshTimeInterval != 0) {
             alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
             Intent intent = new Intent(getActivity(), AlarmReceiver.class);
-            broadcast = PendingIntent.getBroadcast(getActivity(), 0, intent, 0);
+            if (getActivity() != null) {
+                broadcast = PendingIntent.getBroadcast(getActivity(), 0, intent, PendingIntent.FLAG_IMMUTABLE);
+            }
             alarmManager.setInexactRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP, SystemClock.elapsedRealtime(), refreshTimeInterval * 60 * 1000, broadcast);
         }
     }
@@ -519,7 +527,7 @@ public class LoginToYourAccountFragment extends BaseFragment implements Compound
     private class GcmRegistrationtask extends AsyncTask<Void, Void, Void> {
         @Override
         protected Void doInBackground(Void... params) {
-            try {
+           /* try {
                 if (gcm == null) {
                     gcm = GoogleCloudMessaging.getInstance(getActivity());
                 }
@@ -528,7 +536,7 @@ public class LoginToYourAccountFragment extends BaseFragment implements Compound
                 storeRegistrationId(getActivity(), deviceToken);
             } catch (IOException e) {
                 e.printStackTrace();
-            }
+            }*/
             return null;
         }
     }

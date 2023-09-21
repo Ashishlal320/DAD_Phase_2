@@ -5,6 +5,7 @@ import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.widget.TextView;
+
 import com.dad.R;
 
 public class CustomTextViewSemiBold extends TextView {

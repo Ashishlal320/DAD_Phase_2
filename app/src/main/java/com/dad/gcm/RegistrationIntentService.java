@@ -6,8 +6,6 @@ import android.util.Log;
 
 import com.dad.R;
 import com.dad.util.Preference;
-import com.google.android.gms.gcm.GoogleCloudMessaging;
-import com.google.android.gms.iid.InstanceID;
 
 /**
  * Purpose:-
@@ -30,7 +28,7 @@ public class RegistrationIntentService extends IntentService {
     @Override
     protected void onHandleIntent(Intent intent) {
         final Preference preferenceUtils = Preference.getInstance();
-        try {
+       /* try {
             final InstanceID instanceID = InstanceID.getInstance(this);
             final String gcmToken = instanceID.getToken(getString(R.string.gcm_defaultSenderId),
                     GoogleCloudMessaging.INSTANCE_ID_SCOPE, null);
@@ -38,7 +36,7 @@ public class RegistrationIntentService extends IntentService {
             preferenceUtils.savePreferenceData(preferenceUtils.KEY_DEVICE_TOKEN, gcmToken);
         } catch (Exception e) {
             e.printStackTrace();
-        }
+        }*/
     }
 
     /**

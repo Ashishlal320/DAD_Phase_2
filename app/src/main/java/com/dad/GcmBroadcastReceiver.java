@@ -6,8 +6,6 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.content.WakefulBroadcastReceiver;
 
 import com.dad.registration.activity.MainActivity;
 import com.dad.registration.fragment.AlertDetailFragment;
@@ -18,6 +16,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import static com.dad.registration.fragment.AlertFragment.jsonobjectToChange;
+
+import androidx.core.app.NotificationCompat;
+import androidx.legacy.content.WakefulBroadcastReceiver;
 
 public class GcmBroadcastReceiver extends WakefulBroadcastReceiver {
 

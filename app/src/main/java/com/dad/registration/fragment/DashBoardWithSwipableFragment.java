@@ -7,6 +7,7 @@ import com.dad.registration.util.Constant;
 import com.dad.settings.webservices.WsCallGetAlertCount;
 import com.dad.util.Preference;
 import com.dad.util.Util;
+import com.google.android.material.tabs.TabLayout;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -16,13 +17,13 @@ import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.viewpager.widget.ViewPager;
 
 public class DashBoardWithSwipableFragment extends BaseFragment implements TabLayout.OnTabSelectedListener {
 
@@ -95,7 +96,7 @@ public class DashBoardWithSwipableFragment extends BaseFragment implements TabLa
         adapter.addFragment(new AlertFragment(), getString(R.string.dashbord_alert));
         adapter.addFragment(new ImOkFragment(), getString(R.string.dashbord_i_m_ok));
         adapter.addFragment(new AccountFragment(), getString(R.string.dashbord_account));
-        viewPager.setAdapter(adapter);
+        //viewPager.setAdapter(adapter);
     }
 
     /**

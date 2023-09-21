@@ -1,5 +1,6 @@
 package com.dad.registration.fragment;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -17,9 +18,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.ContactsContract;
 import android.provider.MediaStore;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
-import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,6 +26,10 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.core.content.ContextCompat;
+import androidx.core.graphics.drawable.RoundedBitmapDrawable;
+import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.BitmapImageViewTarget;
@@ -228,7 +230,7 @@ public class AddMoreFragment extends BaseFragment {
                 if (path == null) {
                     return;
                 }
-                Glide.with(this).load(imageFile).asBitmap().centerCrop().into(new BitmapImageViewTarget(ivProfilePic) {
+               /* Glide.with(this).load(imageFile).asBitmap().centerCrop().into(new BitmapImageViewTarget(ivProfilePic) {
                     @Override
                     protected void setResource(Bitmap resource) {
                         final RoundedBitmapDrawable circularBitmapDrawable = RoundedBitmapDrawableFactory.create(getResources(), resource);
@@ -236,7 +238,7 @@ public class AddMoreFragment extends BaseFragment {
                         ivProfilePic.setImageDrawable(circularBitmapDrawable);
                         isImageUpdated = true;
                     }
-                });
+                });*/
 
                 break;
 
@@ -315,6 +317,7 @@ public class AddMoreFragment extends BaseFragment {
         startActivityForResult(intent, Constants.REQUEST_CONTACT_NUMBER);
     }
 
+    @SuppressLint("Range")
     @SuppressWarnings("deprecation")
     private void toSetContactSelectedAjay(Intent data) {
 

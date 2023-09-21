@@ -1,6 +1,7 @@
 package com.dad.registration.activity;
 
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class ContactDetailActivity extends AppCompatActivity {
 

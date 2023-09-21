@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -16,6 +15,8 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.core.content.ContextCompat;
 
 import com.dad.R;
 import com.dad.home.BaseFragment;

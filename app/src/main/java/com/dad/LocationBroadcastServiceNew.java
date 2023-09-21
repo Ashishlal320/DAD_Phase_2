@@ -21,18 +21,21 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
 import android.util.Log;
 import android.widget.Toast;
 
 import static android.bluetooth.BluetoothAdapter.ACTION_DISCOVERY_FINISHED;
 import static android.bluetooth.BluetoothAdapter.ACTION_DISCOVERY_STARTED;
+
+import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
 
 /**
  * Created on 23/11/16.
@@ -86,8 +89,7 @@ public class LocationBroadcastServiceNew extends Service implements GoogleApiCli
         Log.d(TAG, "onStartCommand");
 //        Utills.writeFile("\n\n" + "AT " + new Date() + "   " + "Service has been started ", this);
         mSmallestDisplacementValue = DEFAULT_SMALLEST_DISPLACEMENT_DISTANCE_IN_METERS;
-        if (intent != null)
-        {
+        if (intent != null) {
             mSmallestDisplacementValue = intent.getFloatExtra(Constants.Extras.SMALLEST_DISPLACEMENT_VALUE, DEFAULT_SMALLEST_DISPLACEMENT_DISTANCE_IN_METERS);
         }
 
@@ -132,9 +134,18 @@ public class LocationBroadcastServiceNew extends Service implements GoogleApiCli
         startListeningForLocationRequests();
     }
 
-    private void startListeningForLocationRequests()
-    {
+    private void startListeningForLocationRequests() {
         final LocationRequest locationRequest = createLocationRequest();
+        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
         LocationServices.FusedLocationApi.requestLocationUpdates(googleApiClient, locationRequest, this);
     }
 
@@ -173,8 +184,7 @@ public class LocationBroadcastServiceNew extends Service implements GoogleApiCli
 
     private void stopLocationUpdates() {
 //        Utills.writeFile("\n\n" + "AT " + new Date() + "   " + "stopLocationUpdates", this);
-        if (googleApiClient.isConnected())
-        {
+        if (googleApiClient.isConnected()) {
             //Log.d(TAG, "Stopping Location Updates");
             LocationServices.FusedLocationApi.removeLocationUpdates(googleApiClient, this);
             googleApiClient.disconnect();
@@ -328,6 +338,16 @@ public class LocationBroadcastServiceNew extends Service implements GoogleApiCli
                 @Override
                 public void run() {
                     if (mBluetoothAdapter != null) {
+                        if (ActivityCompat.checkSelfPermission(getApplicationContext(), android.Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED) {
+                            // TODO: Consider calling
+                            //    ActivityCompat#requestPermissions
+                            // here to request the missing permissions, and then overriding
+                            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                            //                                          int[] grantResults)
+                            // to handle the case where the user grants the permission. See the documentation
+                            // for ActivityCompat#requestPermissions for more details.
+                            return;
+                        }
                         mBluetoothAdapter.stopLeScan(bleHelper.getmLeScanCallback());
                     }
                 }

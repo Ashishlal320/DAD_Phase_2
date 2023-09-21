@@ -18,7 +18,6 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,6 +25,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.core.content.ContextCompat;
 
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;

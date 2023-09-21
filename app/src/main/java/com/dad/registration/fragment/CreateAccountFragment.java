@@ -38,8 +38,6 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.provider.MediaStore;
-import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
-import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -51,6 +49,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.core.graphics.drawable.RoundedBitmapDrawable;
+import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -236,7 +237,7 @@ public class CreateAccountFragment extends BaseFragment {
                 if (path == null) {
                     return;
                 }
-                Glide.with(this).load(imageFile).asBitmap().centerCrop().into(new BitmapImageViewTarget(imProfile) {
+              /*  Glide.with(this).load(imageFile).asBitmap().centerCrop().into(new BitmapImageViewTarget(imProfile) {
                     @Override
                     protected void setResource(Bitmap resource) {
                         final RoundedBitmapDrawable circularBitmapDrawable = RoundedBitmapDrawableFactory.create(getResources(), resource);
@@ -244,7 +245,7 @@ public class CreateAccountFragment extends BaseFragment {
                         imProfile.setImageDrawable(circularBitmapDrawable);
                         isImageUpdated = true;
                     }
-                });
+                });*/
 
                 break;
         }
@@ -689,7 +690,7 @@ public class CreateAccountFragment extends BaseFragment {
 
         @Override
         protected Void doInBackground(Void... params) {
-            try {
+            /*try {
                 if (gcm == null) {
                     gcm = GoogleCloudMessaging.getInstance(getActivity());
                 }
@@ -698,7 +699,7 @@ public class CreateAccountFragment extends BaseFragment {
             } catch (IOException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
-            }
+            }*/
             return null;
         }
 

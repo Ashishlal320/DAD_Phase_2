@@ -12,7 +12,6 @@ import android.location.Address;
 import android.location.Geocoder;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.support.v4.content.ContextCompat;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.Patterns;
@@ -30,6 +29,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import static com.dad.util.CheckForeground.getActivity;
+
+import androidx.core.content.ContextCompat;
 
 public class Utills {
 

@@ -6,15 +6,19 @@ import android.graphics.BitmapShader;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 
+import androidx.annotation.NonNull;
+
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
+
+import java.security.MessageDigest;
 
 /**
  * Created  on 11/08/16.
  */
 public class CircleTransform extends BitmapTransformation {
     public CircleTransform(Context context) {
-        super(context);
+        //super(context);
     }
 
     private static Bitmap circleCrop(BitmapPool pool, Bitmap source) {
@@ -47,8 +51,13 @@ public class CircleTransform extends BitmapTransformation {
         return circleCrop(pool, toTransform);
     }
 
-    @Override
+   /* @Override
     public String getId() {
         return getClass().getName();
+    }*/
+
+    @Override
+    public void updateDiskCacheKey(@NonNull MessageDigest messageDigest) {
+
     }
 }

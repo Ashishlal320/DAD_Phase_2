@@ -32,8 +32,6 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
-import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -51,6 +49,9 @@ import java.io.InputStream;
 import java.util.Locale;
 
 import static android.app.Activity.RESULT_OK;
+
+import androidx.core.graphics.drawable.RoundedBitmapDrawable;
+import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
 
 public class EditProfileFragment extends BaseFragment {
 
@@ -150,9 +151,6 @@ public class EditProfileFragment extends BaseFragment {
 
         Glide.with(EditProfileFragment.this)
                 .load(imgUrl)
-                .diskCacheStrategy(DiskCacheStrategy.NONE)
-                .skipMemoryCache(true).transform(new CircleTransform(getActivity()))
-                .placeholder(R.drawable.pf_pic)
                 .into(ivProfile);
 
 
@@ -475,7 +473,7 @@ public class EditProfileFragment extends BaseFragment {
                 if (path == null) {
                     return;
                 }
-                Glide.with(this).load(imageFile).asBitmap().centerCrop().into(new BitmapImageViewTarget(ivProfile) {
+               /* Glide.with(this).load(imageFile).asBitmap().centerCrop().into(new BitmapImageViewTarget(ivProfile) {
                     @Override
                     protected void setResource(Bitmap resource) {
                         final RoundedBitmapDrawable circularBitmapDrawable = RoundedBitmapDrawableFactory.create(getResources(), resource);
@@ -483,7 +481,7 @@ public class EditProfileFragment extends BaseFragment {
                         ivProfile.setImageDrawable(circularBitmapDrawable);
                         isImageUpdated = true;
                     }
-                });
+                });*/
 
                 break;
         }

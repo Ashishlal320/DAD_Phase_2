@@ -1,6 +1,6 @@
+/*
 package com.dad.gcm;
 
-import com.google.android.gms.gcm.GcmListenerService;
 
 import com.dad.R;
 import com.dad.home.SplashActivity;
@@ -18,15 +18,16 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
 
+*/
 /**
  * Purpose:- GCM service to receive push notification send by server and generate notification.
- */
+ *//*
+
 public class MyGcmListenerService extends GcmListenerService {
 
     private static ArrayList<String> arrayList;
@@ -40,13 +41,15 @@ public class MyGcmListenerService extends GcmListenerService {
         registerReceiver(mMessageReceiver, filter);
     }
 
-    /**
+    */
+/**
      * Called when message is received.
      *
      * @param from SenderID of the sender.
      * @param data Data bundle containing message data as key/value pairs.
      *             For Set of keys use data.keySet().
-     */
+     *//*
+
     // [START receive_message]
     @Override
     public void onMessageReceived(String from, Bundle data) {
@@ -104,10 +107,12 @@ public class MyGcmListenerService extends GcmListenerService {
         }
         PendingIntent piResult = PendingIntent.getActivity(this, (int) (Math.random() * 100), resultIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
-        /**
+        */
+/**
          * Set Custom Notification Icon according
          * to the Device's Android Versions
-         */
+         *//*
+
         boolean whiteIcon = Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP;
         int notification_small_icon = whiteIcon ? R.drawable.app_icon : R.drawable.app_icon;
 
@@ -158,3 +163,4 @@ public class MyGcmListenerService extends GcmListenerService {
         unregisterReceiver(mMessageReceiver);
     }
 }
+*/

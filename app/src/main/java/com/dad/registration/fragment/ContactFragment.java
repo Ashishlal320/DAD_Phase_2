@@ -28,6 +28,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Fragment;
@@ -37,14 +38,13 @@ import android.bluetooth.BluetoothManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.drawable.ColorDrawable;
 import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -60,6 +60,10 @@ import java.util.TimeZone;
 
 import static android.app.Activity.RESULT_CANCELED;
 import static com.dad.registration.util.Utills.isInternetConnected;
+
+import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 public class ContactFragment extends BaseFragment implements AdapterView.OnItemClickListener, RecieveElementAdapter.OnDeleteItemClickListner {
 
@@ -632,9 +636,19 @@ public class ContactFragment extends BaseFragment implements AdapterView.OnItemC
         }
         isAllredyShown = true;
         Toast.makeText(getActivity(), getString(R.string.TAG_SENDING_ALERT), Toast.LENGTH_SHORT).show();
-        ((MainActivity) getActivity()).updateLatLong();
+        //((MainActivity) getActivity()).updateLatLong();
         new PushForReciever().start();
         if (mBluetoothAdapter != null) {
+            if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED) {
+                // TODO: Consider calling
+                //    ActivityCompat#requestPermissions
+                // here to request the missing permissions, and then overriding
+                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                //                                          int[] grantResults)
+                // to handle the case where the user grants the permission. See the documentation
+                // for ActivityCompat#requestPermissions for more details.
+                return;
+            }
             mBluetoothAdapter.stopLeScan(bleHelper.getmLeScanCallback());
         }
     }

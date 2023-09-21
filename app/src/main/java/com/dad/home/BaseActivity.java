@@ -21,10 +21,11 @@ import android.content.IntentSender;
 import android.location.Location;
 import android.os.Bundle;
 import android.os.SystemClock;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class BaseActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -337,6 +338,7 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         //final LocationSettingsStates states = LocationSettingsStates.fromIntent(intent);
+        super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode) {
 
             case LOCATION_REQUEST_CHECK_SETTINGS:
@@ -361,9 +363,7 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
 
     /**
      * Gets the fragment manager object of activity required for fragment transaction
-     * <p>This method can be customised on the need of application,in which it returns {@link FragmentManager} or {@link android.support.v4.app.FragmentManager}</p>
      *
-     * @return object of {@link FragmentManager} or {@link android.support.v4.app.FragmentManager}
      */
     public FragmentManager getLocalFragmentManager() {
         return this.getFragmentManager();

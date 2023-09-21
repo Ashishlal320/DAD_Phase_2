@@ -7,12 +7,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
-import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 import android.widget.Toast;
 
+import androidx.core.app.NotificationCompat;
+
 import com.dad.registration.fragment.AlertDetailFragment;
-import com.google.android.gms.gcm.GoogleCloudMessaging;
 
 public class GcmIntentService extends IntentService {
 
@@ -28,7 +28,7 @@ public class GcmIntentService extends IntentService {
     @Override
     protected void onHandleIntent(Intent intent) {
         Bundle extras = intent.getExtras();
-        GoogleCloudMessaging gcm = GoogleCloudMessaging.getInstance(this);
+       /* GoogleCloudMessaging gcm = GoogleCloudMessaging.getInstance(this);
         // The getMessageType() intent parameter must be the intent you received
         // in your BroadcastReceiver.
         String messageType = gcm.getMessageType(intent);
@@ -36,12 +36,12 @@ public class GcmIntentService extends IntentService {
         Toast.makeText(this, "Service started", Toast.LENGTH_LONG).show();
 
         if (!extras.isEmpty()) {  // has effect of unparcelling Bundle
-            /*
+            *//*
              * Filter messages based on message type. Since it is likely that GCM
              * will be extended in the future with new message types, just ignore
              * any message types you're not interested in, or that you don't
              * recognize.
-             */
+             *//*
             if (GoogleCloudMessaging.
                     MESSAGE_TYPE_SEND_ERROR.equals(messageType)) {
                 sendNotification("Send error: " + extras.toString());
@@ -66,7 +66,7 @@ public class GcmIntentService extends IntentService {
                 Log.i(TAG, "Received In Service: " + extras.toString());
                 sendNotification(extras.toString());
             }
-        }
+        }*/
         // Release the wake lock provided by the WakefulBroadcastReceiver.
 //        GcmBroadcastReceiver.completeWakefulIntent(intent);
     }

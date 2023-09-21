@@ -1,16 +1,17 @@
 package com.dad.registration.fragment;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.GestureDetector.OnGestureListener;
@@ -58,6 +59,10 @@ import java.util.TimeZone;
 import static com.dad.R.id.fragment_alert_detail_tvDial911;
 import static com.dad.R.id.fragment_alert_detail_tvUserAddress;
 import static com.dad.registration.fragment.AlertFragment.jsonobjectToChange;
+
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 public class AlertDetailFragment extends BaseFragment implements OnClickListener, OnGestureListener, OnMapReadyCallback {
 
@@ -162,13 +167,14 @@ public class AlertDetailFragment extends BaseFragment implements OnClickListener
         }
 
         imagePath = jsonobjectToChange.optString(TAG_IMAGE);
-        String lastWord = imagePath.substring(imagePath.lastIndexOf("/") + 1);;
-        imagePath=imgUrl+lastWord;
-        Glide.with(this)
+        String lastWord = imagePath.substring(imagePath.lastIndexOf("/") + 1);
+        ;
+        imagePath = imgUrl + lastWord;
+        /*Glide.with(this)
                 .load(imagePath).diskCacheStrategy(DiskCacheStrategy.NONE)
                 .skipMemoryCache(true).transform(new CircleTransform(getActivity())) // Uri of the picture
                 .placeholder(R.drawable.pf_pic)
-                .into(imgUserprofile);
+                .into(imgUserprofile);*/
 
     }
 
@@ -439,8 +445,10 @@ public class AlertDetailFragment extends BaseFragment implements OnClickListener
         return false;
     }
 
+
+
     @Override
-    public void onMapReady(GoogleMap googleMap) {
+    public void onMapReady(@NonNull GoogleMap googleMap) {
 
         String userName = null;
         String userAdderss = null;
@@ -462,6 +470,16 @@ public class AlertDetailFragment extends BaseFragment implements OnClickListener
         }
         latLongPos = new LatLng(latitude, longitude); // i have chnaged lat long pos , new LatLng(latitude, longitude); bcz values are coming inverse
 
+        if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
         googleMap.setMyLocationEnabled(true);
 
         googleMap.clear();
@@ -523,9 +541,8 @@ public class AlertDetailFragment extends BaseFragment implements OnClickListener
             ivProifile = (ImageView) v.findViewById(R.id.fragment_dialog_iv_profile);
             final String imagePathpart = jsonobjectToChange.optString(TAG_IMAGE);
             Glide.with(this)
-                    .load(imagePathpart).diskCacheStrategy(DiskCacheStrategy.NONE).fitCenter()
-                    .skipMemoryCache(true)
-                    .placeholder(R.drawable.pf_pic)
+                    //.load(imagePathpart).diskCacheStrategy(DiskCacheStrategy.NONE).fitCenter()
+                    .load(imagePathpart)
                     .into(ivProifile);
 
 

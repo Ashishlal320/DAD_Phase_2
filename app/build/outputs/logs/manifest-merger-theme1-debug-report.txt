@@ -1,467 +1,619 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:2:1-145:12
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-160:12
+INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-160:12
+INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-160:12
+INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-160:12
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\e42c0fe5246b8cd70c2107f07ca5c644\transformed\circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\lenovo\.gradle\caches\transforms-3\8ed122368fef807487b8f2e8a1d00119\transformed\material-1.6.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\lenovo\.gradle\caches\transforms-3\b098268397b2765e2124d4a22d2a84f6\transformed\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\cf798f0a3beda387b205c0da214ee91e\transformed\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v13:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\487bb7e745ed822a478d986c0f2ed85d\transformed\legacy-support-v13-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\3191d8d02611cd1e8983768dabe4efbc\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.intuit.sdp:sdp-android:1.0.6] C:\Users\lenovo\.gradle\caches\transforms-3\a382d18b0c6a5a9ddb76267a376b4078\transformed\sdp-android-1.0.6\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\lenovo\.gradle\caches\transforms-3\92ff432e1d001aa57fbe9278c6f28fd7\transformed\jetified-glide-4.7.1\AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\eadc24989fd730797ee3ad82c366ae44\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\cf237a6ee278dd706991cae21f9d0ff9\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\lenovo\.gradle\caches\transforms-3\e7749fee1f892c544d463747f92e2fa5\transformed\crashlytics-2.10.1\AndroidManifest.xml:2:1-26:12
+MERGED from [androidx.test.espresso:espresso-core:3.1.0-alpha3] C:\Users\lenovo\.gradle\caches\transforms-3\840725c6cb02e762dd9daa7e1beaaa1a\transformed\espresso-core-3.1.0-alpha3\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\lenovo\.gradle\caches\transforms-3\2193e9ded4a1964286ac91fa4304617b\transformed\play-services-location-21.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-gcm:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\40033be5c812d234181c239a441c57ec\transformed\play-services-gcm-17.0.0\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-places:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\ffa6740ea20e8b8497d090fae2f9f139\transformed\play-services-places-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\9a5ccaa6279f6163d4f4a499cb191352\transformed\play-services-maps-18.1.0\AndroidManifest.xml:17:1-44:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\767db000c53cb01ccda842c1fd37a183\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\a600aae9984dab8fb63dbea8b7842002\transformed\play-services-iid-17.0.0\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\e49de0d0fda9e04440feaf26b446dab0\transformed\play-services-stats-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\6b9f960764e72e63992af140cbfe5ab1\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\84d4b09238016f0729bd5662595612c0\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\f3cbf36e733677fd5b7bb107ae2f98e1\transformed\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\lenovo\.gradle\caches\transforms-3\306eab145249ade855ade16c3eea4779\transformed\jetified-gifdecoder-4.7.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.test:runner:1.1.0-alpha3] C:\Users\lenovo\.gradle\caches\transforms-3\dd23f3b137d717552f1a0c22a56db6e6\transformed\runner-1.1.0-alpha3\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\e408576350cf2894c212745de942c119\transformed\play-services-base-18.1.0\AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\lenovo\.gradle\caches\transforms-3\0befa73c09b68eac82f0904d11257ee1\transformed\play-services-tasks-18.0.2\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\ff44ec424f2305e01fb5e35b9d604e46\transformed\play-services-places-placereport-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\b4c69e6d8061700e8591f615f65ac034\transformed\play-services-basement-18.1.0\AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.2.5] C:\Users\lenovo\.gradle\caches\transforms-3\516fe3b4c7581e1a60cc66ee2a358533\transformed\fragment-1.2.5\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\93742ba7abd1975ffd107c36f94de3ff\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\lenovo\.gradle\caches\transforms-3\577b91feb00f6cf99b3dbb478cd16221\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\559a4516a0daa1970961b78d575c1a4d\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\87ecf8591d8222ff73b2c241a8cb8547\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\365a9f7116b202799393b9f21bd2d3b0\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\5280a2a6cab102ed1eacabfdc5efc1cd\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\22f2ba539e97b1f0db995e6f7c5d2ed6\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\77cd2548ca8a71eff912f90e77b03ca1\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\601928613dc9065010aec2ddb972be71\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\fd8672000dc5f431438b5daa078bc93f\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\518a8911a1cf198bf086c30d24c232a3\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\96b827d1acff01cfaf3d3ca96cec34af\transformed\jetified-activity-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\48f5adea1f0cf8f5aca4a2071bfa8150\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.5.0] C:\Users\lenovo\.gradle\caches\transforms-3\304a7233d769ff1cffdb2318980d3bb3\transformed\core-1.5.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\85b48f16a153338a4775e5a975867ff6\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\d087142759f2301ec7336eea55eb40bd\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\b8b62367bdeb610e82655e94bc0e23a9\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\3eaff5424d30b7aa13ca514abd544783\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\f8d51ea07b452813fd8e2e8b2d7a2333\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\5a27cc5be29cd3075eb2ad8cecbc515d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.test:monitor:1.1.0-alpha3] C:\Users\lenovo\.gradle\caches\transforms-3\c76aad31b1f127336fac5fbeff1c1578\transformed\monitor-1.1.0-alpha3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\lenovo\.gradle\caches\transforms-3\e6fb53ed984818db44dd0d7624496915\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\1eda024dffa0f8e6ea141b8278233695\transformed\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\689e43f1a4111e2cd3be52ca578911cd\transformed\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\3dfba40bf9475612b234a6dd007fc7ee\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\e57590e238f4fc09e6586e22849ceb11\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\004e8f4a3eee2dd246a83dac7e3cd2b3\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\a9ddc0e52eb9afd5e01542bc4284076d\transformed\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\1f3d2036743ee3d187d5020edc79a020\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.7.0] C:\Users\lenovo\.gradle\caches\transforms-3\070c4b62077117276538c598251b27a6\transformed\crashlytics-core-2.7.0\AndroidManifest.xml:45:1-56:12
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] C:\Users\lenovo\.gradle\caches\transforms-3\3d5f4c7df148e71bc02266bb973da9e1\transformed\beta-1.2.10\AndroidManifest.xml:2:1-13:12
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] C:\Users\lenovo\.gradle\caches\transforms-3\312541a7d906eccb865fa15a56a5d7dd\transformed\answers-1.4.7\AndroidManifest.xml:2:1-13:12
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] C:\Users\lenovo\.gradle\caches\transforms-3\c9fdffed7717d2e4b0983844f11dccd6\transformed\fabric-1.4.8\AndroidManifest.xml:22:1-33:12
+MERGED from [androidx.test.espresso:espresso-idling-resource:3.1.0-alpha3] C:\Users\lenovo\.gradle\caches\transforms-3\fac18a1e5bba5bc18c59d1b993ef5231\transformed\espresso-idling-resource-3.1.0-alpha3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\99597b908ff2ddf6ef936b16500c4cec\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
+INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-160:12
+INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-160:12
+INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-160:12
 	package
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:3:5-22
-		INJECTED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml
-		INJECTED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:4:5-22
+		INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml
-		INJECTED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml
-	xmlns:android
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:2:11-69
+		INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-160:12
+		INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml
-		INJECTED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml
+		INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:1-160:12
+		INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:6:5-81
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:7:5-81
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:6:22-78
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:7:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:7:5-79
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:8:5-79
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:7:22-76
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:8:22-76
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:8:5-79
-MERGED from [com.google.android.gms:play-services-maps:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.6.1/AndroidManifest.xml:19:5-78
-MERGED from [com.google.firebase:firebase-analytics:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:19:5-78
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:9:5-79
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\9a5ccaa6279f6163d4f4a499cb191352\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\9a5ccaa6279f6163d4f4a499cb191352\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:5-79
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:8:22-76
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:9:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:9:5-76
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:10:5-76
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:9:22-73
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:10:22-73
+uses-permission#android.permission.BLUETOOTH_SCAN
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:11:5-73
+	android:name
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:11:22-70
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:10:5-76
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:12:5-76
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:10:22-73
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:12:22-73
 uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:11:5-79
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:13:5-79
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:11:22-76
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:13:22-76
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:12:5-75
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:14:5-75
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:12:22-72
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:14:22-72
 uses-permission#android.permission.INTERNET
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:13:5-67
-MERGED from [com.google.android.gms:play-services-gcm:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.6.1/AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.6.1/AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-maps:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.6.1/AndroidManifest.xml:20:5-66
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.6.5] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.6.5/AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:beta:1.2.2] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/beta/1.2.2/AndroidManifest.xml:9:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.3.14] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.14/AndroidManifest.xml:25:5-67
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.14] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-core/2.3.14/AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:answers:1.3.10] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.10/AndroidManifest.xml:9:5-67
-MERGED from [com.google.firebase:firebase-analytics:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:20:5-66
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:15:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\lenovo\.gradle\caches\transforms-3\e7749fee1f892c544d463747f92e2fa5\transformed\crashlytics-2.10.1\AndroidManifest.xml:16:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\lenovo\.gradle\caches\transforms-3\e7749fee1f892c544d463747f92e2fa5\transformed\crashlytics-2.10.1\AndroidManifest.xml:16:5-67
+MERGED from [com.google.android.gms:play-services-gcm:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\40033be5c812d234181c239a441c57ec\transformed\play-services-gcm-17.0.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-gcm:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\40033be5c812d234181c239a441c57ec\transformed\play-services-gcm-17.0.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\9a5ccaa6279f6163d4f4a499cb191352\transformed\play-services-maps-18.1.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\9a5ccaa6279f6163d4f4a499cb191352\transformed\play-services-maps-18.1.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\a600aae9984dab8fb63dbea8b7842002\transformed\play-services-iid-17.0.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\a600aae9984dab8fb63dbea8b7842002\transformed\play-services-iid-17.0.0\AndroidManifest.xml:24:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.7.0] C:\Users\lenovo\.gradle\caches\transforms-3\070c4b62077117276538c598251b27a6\transformed\crashlytics-core-2.7.0\AndroidManifest.xml:52:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.7.0] C:\Users\lenovo\.gradle\caches\transforms-3\070c4b62077117276538c598251b27a6\transformed\crashlytics-core-2.7.0\AndroidManifest.xml:52:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] C:\Users\lenovo\.gradle\caches\transforms-3\3d5f4c7df148e71bc02266bb973da9e1\transformed\beta-1.2.10\AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] C:\Users\lenovo\.gradle\caches\transforms-3\3d5f4c7df148e71bc02266bb973da9e1\transformed\beta-1.2.10\AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] C:\Users\lenovo\.gradle\caches\transforms-3\312541a7d906eccb865fa15a56a5d7dd\transformed\answers-1.4.7\AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] C:\Users\lenovo\.gradle\caches\transforms-3\312541a7d906eccb865fa15a56a5d7dd\transformed\answers-1.4.7\AndroidManifest.xml:9:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] C:\Users\lenovo\.gradle\caches\transforms-3\c9fdffed7717d2e4b0983844f11dccd6\transformed\fabric-1.4.8\AndroidManifest.xml:29:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] C:\Users\lenovo\.gradle\caches\transforms-3\c9fdffed7717d2e4b0983844f11dccd6\transformed\fabric-1.4.8\AndroidManifest.xml:29:5-67
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:13:22-64
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:15:22-64
 uses-permission#android.permission.READ_CONTACTS
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:14:5-72
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:16:5-72
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:14:22-69
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:16:22-69
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:15:5-81
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:17:5-81
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:15:22-78
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:17:22-78
 uses-permission#android.permission.CALL_PHONE
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:16:5-69
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:18:5-69
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:16:22-66
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:18:22-66
 uses-permission#android.permission.CALL_PRIVILEGED
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:17:5-74
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:19:5-74
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:17:22-71
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:19:22-71
 uses-permission#android.permission.BLUETOOTH
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:18:5-68
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:20:5-68
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:18:22-65
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:20:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:19:5-74
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:21:5-74
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:19:22-71
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:21:22-71
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:20:5-71
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:22:5-71
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:20:22-68
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:22:22-68
 uses-permission#android.permission.WAKE_LOCK
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:21:5-68
-MERGED from [com.google.firebase:firebase-analytics:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:21:5-67
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:23:5-68
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:21:22-65
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:23:22-65
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:22:5-82
-MERGED from [com.google.android.gms:play-services-gcm:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.6.1/AndroidManifest.xml:20:5-81
-MERGED from [com.google.android.gms:play-services-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.6.1/AndroidManifest.xml:20:5-81
-MERGED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:22:5-81
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:24:5-82
+MERGED from [com.google.android.gms:play-services-gcm:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\40033be5c812d234181c239a441c57ec\transformed\play-services-gcm-17.0.0\AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-gcm:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\40033be5c812d234181c239a441c57ec\transformed\play-services-gcm-17.0.0\AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\a600aae9984dab8fb63dbea8b7842002\transformed\play-services-iid-17.0.0\AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\a600aae9984dab8fb63dbea8b7842002\transformed\play-services-iid-17.0.0\AndroidManifest.xml:23:5-82
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:22:22-79
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:24:22-79
 uses-permission#android.permission.CAMERA
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:23:5-65
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:25:5-65
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:23:22-62
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:25:22-62
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:24:5-81
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:26:5-81
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:24:22-78
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:26:22-78
 uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:25:5-88
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:27:5-88
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:25:22-85
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:27:22-85
 uses-feature#android.hardware.location.gps
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:27:5-66
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:29:5-66
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:27:19-63
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:29:19-63
 permission#com.tigerlight.dad.permission.C2D_MESSAGE
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:29:5-31:47
-MERGED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:24:5-109
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:31:5-33:47
 	android:protectionLevel
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:31:9-44
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:33:9-44
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:30:9-65
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:32:9-65
 uses-permission#com.tigerlight.dad.permission.C2D_MESSAGE
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:33:5-81
-MERGED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:26:5-78
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:35:5-81
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:33:22-78
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:35:22-78
 uses-feature#android.hardware.camera
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:40:5-42:35
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:42:5-44:35
 	android:required
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:42:9-32
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:44:9-32
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:41:9-47
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:43:9-47
 uses-feature#android.hardware.bluetooth_le
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:43:5-45:35
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:45:5-47:35
 	android:required
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:45:9-32
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:47:9-32
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:44:9-53
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:46:9-53
 application
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:47:5-143:19
-MERGED from [de.hdodenhof:circleimageview:2.1.0] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.1.0/AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.gms:play-services-gcm:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.6.1/AndroidManifest.xml:23:5-19
-MERGED from [com.google.android.gms:play-services-base:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-basement:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-v4/26.0.0-alpha1/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.0.0-alpha1/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/26.0.0-alpha1/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/26.0.0-alpha1/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/26.0.0-alpha1/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-fragment/26.0.0-alpha1/AndroidManifest.xml:29:5-20
-MERGED from [com.google.android.gms:play-services-tasks:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.6.1/AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.6.1/AndroidManifest.xml:23:5-19
-MERGED from [com.google.android.gms:play-services-places:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.6.1/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-maps:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.6.1/AndroidManifest.xml:24:5-19
-MERGED from [com.google.android.gms:play-services-location:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.6.1/AndroidManifest.xml:4:5-19
-MERGED from [com.android.support:design:24.2.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:24.2.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-vector-drawable:24.2.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:animated-vector-drawable:24.2.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v13:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-v13/26.0.0-alpha1/AndroidManifest.xml:29:5-20
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.6.5] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.6.5/AndroidManifest.xml:11:5-20
-MERGED from [com.crashlytics.sdk.android:beta:1.2.2] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/beta/1.2.2/AndroidManifest.xml:11:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.3.14] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.14/AndroidManifest.xml:27:5-20
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.14] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-core/2.3.14/AndroidManifest.xml:11:5-20
-MERGED from [com.crashlytics.sdk.android:answers:1.3.10] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.10/AndroidManifest.xml:11:5-20
-MERGED from [com.android.support.test:runner:0.5] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support.test/runner/0.5/AndroidManifest.xml:24:5-20
-MERGED from [com.android.support.test:exposed-instrumentation-api-publish:0.5] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support.test/exposed-instrumentation-api-publish/0.5/AndroidManifest.xml:24:5-20
-MERGED from [com.android.support.test.espresso:espresso-idling-resource:2.2.2] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support.test.espresso/espresso-idling-resource/2.2.2/AndroidManifest.xml:24:5-20
-MERGED from [com.google.firebase:firebase-core:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-core/9.6.1/AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-analytics:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:24:5-33:19
-MERGED from [com.google.firebase:firebase-common:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/AndroidManifest.xml:4:5-7:19
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/AndroidManifest.xml:24:5-28:19
-MERGED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:28:5-50:19
-	android:label
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:51:9-41
-	android:supportsRtl
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:52:9-35
-	android:allowBackup
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:49:9-35
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:52:5-158:19
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\e42c0fe5246b8cd70c2107f07ca5c644\transformed\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\e42c0fe5246b8cd70c2107f07ca5c644\transformed\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\lenovo\.gradle\caches\transforms-3\8ed122368fef807487b8f2e8a1d00119\transformed\material-1.6.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\lenovo\.gradle\caches\transforms-3\8ed122368fef807487b8f2e8a1d00119\transformed\material-1.6.0\AndroidManifest.xml:24:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\lenovo\.gradle\caches\transforms-3\b098268397b2765e2124d4a22d2a84f6\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\lenovo\.gradle\caches\transforms-3\b098268397b2765e2124d4a22d2a84f6\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\lenovo\.gradle\caches\transforms-3\92ff432e1d001aa57fbe9278c6f28fd7\transformed\jetified-glide-4.7.1\AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\lenovo\.gradle\caches\transforms-3\92ff432e1d001aa57fbe9278c6f28fd7\transformed\jetified-glide-4.7.1\AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\lenovo\.gradle\caches\transforms-3\e7749fee1f892c544d463747f92e2fa5\transformed\crashlytics-2.10.1\AndroidManifest.xml:18:5-24:19
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\lenovo\.gradle\caches\transforms-3\e7749fee1f892c544d463747f92e2fa5\transformed\crashlytics-2.10.1\AndroidManifest.xml:18:5-24:19
+MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\lenovo\.gradle\caches\transforms-3\2193e9ded4a1964286ac91fa4304617b\transformed\play-services-location-21.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\lenovo\.gradle\caches\transforms-3\2193e9ded4a1964286ac91fa4304617b\transformed\play-services-location-21.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-gcm:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\40033be5c812d234181c239a441c57ec\transformed\play-services-gcm-17.0.0\AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-gcm:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\40033be5c812d234181c239a441c57ec\transformed\play-services-gcm-17.0.0\AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-places:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\ffa6740ea20e8b8497d090fae2f9f139\transformed\play-services-places-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\ffa6740ea20e8b8497d090fae2f9f139\transformed\play-services-places-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\9a5ccaa6279f6163d4f4a499cb191352\transformed\play-services-maps-18.1.0\AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\9a5ccaa6279f6163d4f4a499cb191352\transformed\play-services-maps-18.1.0\AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\a600aae9984dab8fb63dbea8b7842002\transformed\play-services-iid-17.0.0\AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\a600aae9984dab8fb63dbea8b7842002\transformed\play-services-iid-17.0.0\AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\e49de0d0fda9e04440feaf26b446dab0\transformed\play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\e49de0d0fda9e04440feaf26b446dab0\transformed\play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\lenovo\.gradle\caches\transforms-3\306eab145249ade855ade16c3eea4779\transformed\jetified-gifdecoder-4.7.1\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\lenovo\.gradle\caches\transforms-3\306eab145249ade855ade16c3eea4779\transformed\jetified-gifdecoder-4.7.1\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\e408576350cf2894c212745de942c119\transformed\play-services-base-18.1.0\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\e408576350cf2894c212745de942c119\transformed\play-services-base-18.1.0\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\lenovo\.gradle\caches\transforms-3\0befa73c09b68eac82f0904d11257ee1\transformed\play-services-tasks-18.0.2\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\lenovo\.gradle\caches\transforms-3\0befa73c09b68eac82f0904d11257ee1\transformed\play-services-tasks-18.0.2\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\ff44ec424f2305e01fb5e35b9d604e46\transformed\play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\ff44ec424f2305e01fb5e35b9d604e46\transformed\play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\b4c69e6d8061700e8591f615f65ac034\transformed\play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\b4c69e6d8061700e8591f615f65ac034\transformed\play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.core:core:1.5.0] C:\Users\lenovo\.gradle\caches\transforms-3\304a7233d769ff1cffdb2318980d3bb3\transformed\core-1.5.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.5.0] C:\Users\lenovo\.gradle\caches\transforms-3\304a7233d769ff1cffdb2318980d3bb3\transformed\core-1.5.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\lenovo\.gradle\caches\transforms-3\e6fb53ed984818db44dd0d7624496915\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\lenovo\.gradle\caches\transforms-3\e6fb53ed984818db44dd0d7624496915\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.7.0] C:\Users\lenovo\.gradle\caches\transforms-3\070c4b62077117276538c598251b27a6\transformed\crashlytics-core-2.7.0\AndroidManifest.xml:54:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.7.0] C:\Users\lenovo\.gradle\caches\transforms-3\070c4b62077117276538c598251b27a6\transformed\crashlytics-core-2.7.0\AndroidManifest.xml:54:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] C:\Users\lenovo\.gradle\caches\transforms-3\3d5f4c7df148e71bc02266bb973da9e1\transformed\beta-1.2.10\AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] C:\Users\lenovo\.gradle\caches\transforms-3\3d5f4c7df148e71bc02266bb973da9e1\transformed\beta-1.2.10\AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] C:\Users\lenovo\.gradle\caches\transforms-3\312541a7d906eccb865fa15a56a5d7dd\transformed\answers-1.4.7\AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] C:\Users\lenovo\.gradle\caches\transforms-3\312541a7d906eccb865fa15a56a5d7dd\transformed\answers-1.4.7\AndroidManifest.xml:11:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] C:\Users\lenovo\.gradle\caches\transforms-3\c9fdffed7717d2e4b0983844f11dccd6\transformed\fabric-1.4.8\AndroidManifest.xml:31:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] C:\Users\lenovo\.gradle\caches\transforms-3\c9fdffed7717d2e4b0983844f11dccd6\transformed\fabric-1.4.8\AndroidManifest.xml:31:5-20
+	android:requestLegacyExternalStorage
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:56:9-52
+	tools:ignore
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:60:9-48
+	android:largeHeap
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:55:9-33
 	android:icon
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:50:9-42
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:62:9-42
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.5.0] C:\Users\lenovo\.gradle\caches\transforms-3\304a7233d769ff1cffdb2318980d3bb3\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:64:9-35
+	android:label
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:63:9-41
+	android:hardwareAccelerated
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:57:9-43
+	tools:targetApi
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:67:9-28
+	android:allowBackup
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:54:9-35
 	android:theme
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:53:9-40
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:65:9-40
+	tools:replace
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:66:9-100
+	android:usesCleartextTraffic
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:59:9-44
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:48:9-39
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:53:9-39
 activity#com.dad.home.SplashActivity
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:54:9-66:20
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:68:9-80:20
 	android:screenOrientation
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:58:13-49
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:73:13-49
+	android:exported
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:72:13-36
 	android:configChanges
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:57:13-74
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:71:13-74
 	android:alwaysRetainTaskState
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:56:13-49
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:70:13-49
 	android:theme
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:59:13-51
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:74:13-51
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:55:13-48
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:61:13-65:29
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:69:13-48
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:75:13-79:29
 action#android.intent.action.MAIN
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:62:17-69
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:76:17-69
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:62:25-66
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:76:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:64:17-77
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:78:17-77
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:64:27-74
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:78:27-74
 activity#com.dad.registration.activity.MainActivity
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:67:9-70:54
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:81:9-84:54
 	android:screenOrientation
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:69:13-49
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:83:13-49
 	android:theme
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:70:13-51
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:84:13-51
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:68:13-63
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:82:13-63
 activity#com.dad.cropimage.CropImage
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:71:9-57
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:85:9-57
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:71:19-54
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:85:19-54
 activity#com.dad.simplecropping.CropImage
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:72:9-62
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:86:9-62
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:72:19-59
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:86:19-59
 receiver#com.dad.GcmBroadcastReceiver
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:74:9-84:20
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:88:9-99:20
+	android:exported
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:90:13-36
 	android:permission
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:76:13-73
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:91:13-73
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:75:13-49
-intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+com.tigerlight.dad
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:77:13-83:29
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:89:13-49
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+action:name:com.google.android.c2dm.intent.REGISTRATION+category:name:com.tigerlight.dad
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:92:13-98:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:78:17-81
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:93:17-81
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:78:25-78
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:93:25-78
 action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:80:17-86
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:95:17-86
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:80:25-83
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:95:25-83
 category#com.tigerlight.dad
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:82:17-63
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:97:17-63
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:82:27-60
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:97:27-60
 receiver#com.dad.blework.BootReceiver
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:85:9-92:20
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:100:9-107:20
 	android:enabled
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:87:13-35
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:102:13-35
 	android:exported
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:88:13-36
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:103:13-36
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:86:13-49
-intent-filter#android.intent.action.BOOT_COMPLETED
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:89:13-91:29
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:101:13-49
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:104:13-106:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:90:17-79
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:105:17-79
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:90:25-76
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:105:25-76
 receiver#com.dad.blework.AlarmReceiver
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:93:9-59
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:108:9-59
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:93:19-56
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:108:19-56
 receiver#com.dad.blework.BleReceiver
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:94:9-57
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:109:9-57
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:94:19-54
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:109:19-54
 service#com.dad.blework.BleService
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:96:9-55
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:111:9-55
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:96:18-52
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:111:18-52
 service#com.dad.GcmIntentService
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:100:9-53
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:112:9-53
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:100:18-50
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:112:18-50
 receiver#com.dad.AlarmServiceBroadcastReciever
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:102:9-109:20
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:114:9-121:20
 	android:enabled
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:104:13-35
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:116:13-35
 	android:exported
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:105:13-36
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:117:13-36
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:103:13-65
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:115:13-58
 receiver#com.dad.BleBroadCast
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:114:9-121:20
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:122:9-129:20
 	android:enabled
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:116:13-35
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:124:13-35
 	android:exported
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:117:13-36
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:125:13-36
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:115:13-48
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:123:13-41
 service#com.dad.LocationBroadcastServiceNew
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:130:9-64
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:138:9-64
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:130:18-61
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:138:18-61
 meta-data#com.google.android.geo.API_KEY
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:133:9-135:71
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:140:9-142:71
 	android:value
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:135:13-68
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:142:13-68
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:134:13-58
-meta-data#com.google.android.gms.version
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:136:9-138:69
-MERGED from [com.google.android.gms:play-services-basement:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/AndroidManifest.xml:20:9-121
-	android:value
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:138:13-66
-	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:137:13-58
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:141:13-58
 meta-data#io.fabric.ApiKey
-ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:139:9-141:72
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:146:9-148:72
 	android:value
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:141:13-69
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:148:13-69
 	android:name
-		ADDED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml:140:13-44
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:147:13-44
+receiver#com.dad.recievers.AlertSentReceiver
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:150:9-157:20
+	android:enabled
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:152:13-35
+	android:exported
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:153:13-37
+	android:name
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:151:13-56
+intent-filter#action:name:com.tigerlight.action.alert_sent
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:154:13-156:29
+action#com.tigerlight.action.alert_sent
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:155:17-75
+	android:name
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:155:25-72
 uses-sdk
-INJECTED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [de.hdodenhof:circleimageview:2.1.0] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.1.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.gms:play-services-gcm:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.6.1/AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-base:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-v4/26.0.0-alpha1/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.0.0-alpha1/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/26.0.0-alpha1/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/26.0.0-alpha1/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/26.0.0-alpha1/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-fragment/26.0.0-alpha1/AndroidManifest.xml:21:5-23:60
-MERGED from [com.google.android.gms:play-services-tasks:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.6.1/AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.6.1/AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-places:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.6.1/AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-maps:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.6.1/AndroidManifest.xml:23:5-42
-MERGED from [com.google.android.gms:play-services-location:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.6.1/AndroidManifest.xml:3:5-42
-MERGED from [com.intuit.sdp:sdp-android:1.0.3] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.intuit.sdp/sdp-android/1.0.3/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:design:24.2.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:24.2.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-vector-drawable:24.2.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:animated-vector-drawable:24.2.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:24.2.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v13:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-v13/26.0.0-alpha1/AndroidManifest.xml:21:5-23:55
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.6.5] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.6.5/AndroidManifest.xml:7:5-43
-MERGED from [com.crashlytics.sdk.android:beta:1.2.2] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/beta/1.2.2/AndroidManifest.xml:7:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.3.14] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.14/AndroidManifest.xml:23:5-43
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.14] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-core/2.3.14/AndroidManifest.xml:7:5-43
-MERGED from [com.crashlytics.sdk.android:answers:1.3.10] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.10/AndroidManifest.xml:7:5-43
-MERGED from [com.android.support.test.espresso:espresso-core:2.2.2] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support.test.espresso/espresso-core/2.2.2/AndroidManifest.xml:20:5-22:41
-MERGED from [com.android.support.test:rules:0.5] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support.test/rules/0.5/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.test:runner:0.5] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support.test/runner/0.5/AndroidManifest.xml:20:5-22:41
-MERGED from [com.android.support.test:exposed-instrumentation-api-publish:0.5] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support.test/exposed-instrumentation-api-publish/0.5/AndroidManifest.xml:20:5-22:41
-MERGED from [com.android.support.test.espresso:espresso-idling-resource:2.2.2] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support.test.espresso/espresso-idling-resource/2.2.2/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.firebase:firebase-core:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-core/9.6.1/AndroidManifest.xml:4:5-42
-MERGED from [com.google.firebase:firebase-analytics:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-common:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:17:5-42
+INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml
+INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\e42c0fe5246b8cd70c2107f07ca5c644\transformed\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\e42c0fe5246b8cd70c2107f07ca5c644\transformed\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\lenovo\.gradle\caches\transforms-3\8ed122368fef807487b8f2e8a1d00119\transformed\material-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.6.0] C:\Users\lenovo\.gradle\caches\transforms-3\8ed122368fef807487b8f2e8a1d00119\transformed\material-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\lenovo\.gradle\caches\transforms-3\b098268397b2765e2124d4a22d2a84f6\transformed\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\lenovo\.gradle\caches\transforms-3\b098268397b2765e2124d4a22d2a84f6\transformed\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\cf798f0a3beda387b205c0da214ee91e\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\cf798f0a3beda387b205c0da214ee91e\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v13:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\487bb7e745ed822a478d986c0f2ed85d\transformed\legacy-support-v13-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v13:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\487bb7e745ed822a478d986c0f2ed85d\transformed\legacy-support-v13-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\3191d8d02611cd1e8983768dabe4efbc\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\3191d8d02611cd1e8983768dabe4efbc\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.intuit.sdp:sdp-android:1.0.6] C:\Users\lenovo\.gradle\caches\transforms-3\a382d18b0c6a5a9ddb76267a376b4078\transformed\sdp-android-1.0.6\AndroidManifest.xml:7:5-9:41
+MERGED from [com.intuit.sdp:sdp-android:1.0.6] C:\Users\lenovo\.gradle\caches\transforms-3\a382d18b0c6a5a9ddb76267a376b4078\transformed\sdp-android-1.0.6\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\lenovo\.gradle\caches\transforms-3\92ff432e1d001aa57fbe9278c6f28fd7\transformed\jetified-glide-4.7.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\lenovo\.gradle\caches\transforms-3\92ff432e1d001aa57fbe9278c6f28fd7\transformed\jetified-glide-4.7.1\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\eadc24989fd730797ee3ad82c366ae44\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\eadc24989fd730797ee3ad82c366ae44\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\cf237a6ee278dd706991cae21f9d0ff9\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\cf237a6ee278dd706991cae21f9d0ff9\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\lenovo\.gradle\caches\transforms-3\e7749fee1f892c544d463747f92e2fa5\transformed\crashlytics-2.10.1\AndroidManifest.xml:12:5-14:63
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\lenovo\.gradle\caches\transforms-3\e7749fee1f892c544d463747f92e2fa5\transformed\crashlytics-2.10.1\AndroidManifest.xml:12:5-14:63
+MERGED from [androidx.test.espresso:espresso-core:3.1.0-alpha3] C:\Users\lenovo\.gradle\caches\transforms-3\840725c6cb02e762dd9daa7e1beaaa1a\transformed\espresso-core-3.1.0-alpha3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test.espresso:espresso-core:3.1.0-alpha3] C:\Users\lenovo\.gradle\caches\transforms-3\840725c6cb02e762dd9daa7e1beaaa1a\transformed\espresso-core-3.1.0-alpha3\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\lenovo\.gradle\caches\transforms-3\2193e9ded4a1964286ac91fa4304617b\transformed\play-services-location-21.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\lenovo\.gradle\caches\transforms-3\2193e9ded4a1964286ac91fa4304617b\transformed\play-services-location-21.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-gcm:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\40033be5c812d234181c239a441c57ec\transformed\play-services-gcm-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gcm:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\40033be5c812d234181c239a441c57ec\transformed\play-services-gcm-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\ffa6740ea20e8b8497d090fae2f9f139\transformed\play-services-places-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\ffa6740ea20e8b8497d090fae2f9f139\transformed\play-services-places-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\9a5ccaa6279f6163d4f4a499cb191352\transformed\play-services-maps-18.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\9a5ccaa6279f6163d4f4a499cb191352\transformed\play-services-maps-18.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\767db000c53cb01ccda842c1fd37a183\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\767db000c53cb01ccda842c1fd37a183\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\a600aae9984dab8fb63dbea8b7842002\transformed\play-services-iid-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\a600aae9984dab8fb63dbea8b7842002\transformed\play-services-iid-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\e49de0d0fda9e04440feaf26b446dab0\transformed\play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\e49de0d0fda9e04440feaf26b446dab0\transformed\play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\6b9f960764e72e63992af140cbfe5ab1\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\6b9f960764e72e63992af140cbfe5ab1\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\84d4b09238016f0729bd5662595612c0\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\84d4b09238016f0729bd5662595612c0\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\f3cbf36e733677fd5b7bb107ae2f98e1\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\f3cbf36e733677fd5b7bb107ae2f98e1\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\lenovo\.gradle\caches\transforms-3\306eab145249ade855ade16c3eea4779\transformed\jetified-gifdecoder-4.7.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\lenovo\.gradle\caches\transforms-3\306eab145249ade855ade16c3eea4779\transformed\jetified-gifdecoder-4.7.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.test:runner:1.1.0-alpha3] C:\Users\lenovo\.gradle\caches\transforms-3\dd23f3b137d717552f1a0c22a56db6e6\transformed\runner-1.1.0-alpha3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:runner:1.1.0-alpha3] C:\Users\lenovo\.gradle\caches\transforms-3\dd23f3b137d717552f1a0c22a56db6e6\transformed\runner-1.1.0-alpha3\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\e408576350cf2894c212745de942c119\transformed\play-services-base-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\e408576350cf2894c212745de942c119\transformed\play-services-base-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\lenovo\.gradle\caches\transforms-3\0befa73c09b68eac82f0904d11257ee1\transformed\play-services-tasks-18.0.2\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\lenovo\.gradle\caches\transforms-3\0befa73c09b68eac82f0904d11257ee1\transformed\play-services-tasks-18.0.2\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\ff44ec424f2305e01fb5e35b9d604e46\transformed\play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\ff44ec424f2305e01fb5e35b9d604e46\transformed\play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\b4c69e6d8061700e8591f615f65ac034\transformed\play-services-basement-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\b4c69e6d8061700e8591f615f65ac034\transformed\play-services-basement-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.2.5] C:\Users\lenovo\.gradle\caches\transforms-3\516fe3b4c7581e1a60cc66ee2a358533\transformed\fragment-1.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.5] C:\Users\lenovo\.gradle\caches\transforms-3\516fe3b4c7581e1a60cc66ee2a358533\transformed\fragment-1.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\93742ba7abd1975ffd107c36f94de3ff\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\93742ba7abd1975ffd107c36f94de3ff\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\lenovo\.gradle\caches\transforms-3\577b91feb00f6cf99b3dbb478cd16221\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\lenovo\.gradle\caches\transforms-3\577b91feb00f6cf99b3dbb478cd16221\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\559a4516a0daa1970961b78d575c1a4d\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\559a4516a0daa1970961b78d575c1a4d\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\87ecf8591d8222ff73b2c241a8cb8547\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\87ecf8591d8222ff73b2c241a8cb8547\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\365a9f7116b202799393b9f21bd2d3b0\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\365a9f7116b202799393b9f21bd2d3b0\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\5280a2a6cab102ed1eacabfdc5efc1cd\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\5280a2a6cab102ed1eacabfdc5efc1cd\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\22f2ba539e97b1f0db995e6f7c5d2ed6\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\22f2ba539e97b1f0db995e6f7c5d2ed6\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\77cd2548ca8a71eff912f90e77b03ca1\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\77cd2548ca8a71eff912f90e77b03ca1\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\601928613dc9065010aec2ddb972be71\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\601928613dc9065010aec2ddb972be71\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\fd8672000dc5f431438b5daa078bc93f\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\fd8672000dc5f431438b5daa078bc93f\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\518a8911a1cf198bf086c30d24c232a3\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\518a8911a1cf198bf086c30d24c232a3\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\96b827d1acff01cfaf3d3ca96cec34af\transformed\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\96b827d1acff01cfaf3d3ca96cec34af\transformed\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\48f5adea1f0cf8f5aca4a2071bfa8150\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\48f5adea1f0cf8f5aca4a2071bfa8150\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0] C:\Users\lenovo\.gradle\caches\transforms-3\304a7233d769ff1cffdb2318980d3bb3\transformed\core-1.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0] C:\Users\lenovo\.gradle\caches\transforms-3\304a7233d769ff1cffdb2318980d3bb3\transformed\core-1.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\85b48f16a153338a4775e5a975867ff6\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\85b48f16a153338a4775e5a975867ff6\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\d087142759f2301ec7336eea55eb40bd\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\d087142759f2301ec7336eea55eb40bd\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\b8b62367bdeb610e82655e94bc0e23a9\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\b8b62367bdeb610e82655e94bc0e23a9\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\3eaff5424d30b7aa13ca514abd544783\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\3eaff5424d30b7aa13ca514abd544783\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\f8d51ea07b452813fd8e2e8b2d7a2333\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\f8d51ea07b452813fd8e2e8b2d7a2333\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\5a27cc5be29cd3075eb2ad8cecbc515d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\5a27cc5be29cd3075eb2ad8cecbc515d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.test:monitor:1.1.0-alpha3] C:\Users\lenovo\.gradle\caches\transforms-3\c76aad31b1f127336fac5fbeff1c1578\transformed\monitor-1.1.0-alpha3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test:monitor:1.1.0-alpha3] C:\Users\lenovo\.gradle\caches\transforms-3\c76aad31b1f127336fac5fbeff1c1578\transformed\monitor-1.1.0-alpha3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\lenovo\.gradle\caches\transforms-3\e6fb53ed984818db44dd0d7624496915\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\lenovo\.gradle\caches\transforms-3\e6fb53ed984818db44dd0d7624496915\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\1eda024dffa0f8e6ea141b8278233695\transformed\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\1eda024dffa0f8e6ea141b8278233695\transformed\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\689e43f1a4111e2cd3be52ca578911cd\transformed\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\689e43f1a4111e2cd3be52ca578911cd\transformed\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\3dfba40bf9475612b234a6dd007fc7ee\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\3dfba40bf9475612b234a6dd007fc7ee\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\e57590e238f4fc09e6586e22849ceb11\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\e57590e238f4fc09e6586e22849ceb11\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\004e8f4a3eee2dd246a83dac7e3cd2b3\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\004e8f4a3eee2dd246a83dac7e3cd2b3\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\a9ddc0e52eb9afd5e01542bc4284076d\transformed\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\lenovo\.gradle\caches\transforms-3\a9ddc0e52eb9afd5e01542bc4284076d\transformed\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\1f3d2036743ee3d187d5020edc79a020\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\1f3d2036743ee3d187d5020edc79a020\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.7.0] C:\Users\lenovo\.gradle\caches\transforms-3\070c4b62077117276538c598251b27a6\transformed\crashlytics-core-2.7.0\AndroidManifest.xml:50:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.7.0] C:\Users\lenovo\.gradle\caches\transforms-3\070c4b62077117276538c598251b27a6\transformed\crashlytics-core-2.7.0\AndroidManifest.xml:50:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] C:\Users\lenovo\.gradle\caches\transforms-3\3d5f4c7df148e71bc02266bb973da9e1\transformed\beta-1.2.10\AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] C:\Users\lenovo\.gradle\caches\transforms-3\3d5f4c7df148e71bc02266bb973da9e1\transformed\beta-1.2.10\AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] C:\Users\lenovo\.gradle\caches\transforms-3\312541a7d906eccb865fa15a56a5d7dd\transformed\answers-1.4.7\AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] C:\Users\lenovo\.gradle\caches\transforms-3\312541a7d906eccb865fa15a56a5d7dd\transformed\answers-1.4.7\AndroidManifest.xml:7:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] C:\Users\lenovo\.gradle\caches\transforms-3\c9fdffed7717d2e4b0983844f11dccd6\transformed\fabric-1.4.8\AndroidManifest.xml:27:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] C:\Users\lenovo\.gradle\caches\transforms-3\c9fdffed7717d2e4b0983844f11dccd6\transformed\fabric-1.4.8\AndroidManifest.xml:27:5-43
+MERGED from [androidx.test.espresso:espresso-idling-resource:3.1.0-alpha3] C:\Users\lenovo\.gradle\caches\transforms-3\fac18a1e5bba5bc18c59d1b993ef5231\transformed\espresso-idling-resource-3.1.0-alpha3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.test.espresso:espresso-idling-resource:3.1.0-alpha3] C:\Users\lenovo\.gradle\caches\transforms-3\fac18a1e5bba5bc18c59d1b993ef5231\transformed\espresso-idling-resource-3.1.0-alpha3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\99597b908ff2ddf6ef936b16500c4cec\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\lenovo\.gradle\caches\transforms-3\99597b908ff2ddf6ef936b16500c4cec\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml
+INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v4:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-v4/26.0.0-alpha1/AndroidManifest.xml:23:9-51
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\lenovo\.gradle\caches\transforms-3\e7749fee1f892c544d463747f92e2fa5\transformed\crashlytics-2.10.1\AndroidManifest.xml:14:9-60
 	android:targetSdkVersion
-		INJECTED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml
-		INJECTED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml
+		INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml
-		INJECTED from /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/src/main/AndroidManifest.xml
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/AndroidManifest.xml:19:9-172
-	android:exported
-		ADDED from [com.google.android.gms:play-services-base:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/AndroidManifest.xml:19:146-170
-	android:theme
-		ADDED from [com.google.android.gms:play-services-base:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/AndroidManifest.xml:19:86-145
-	android:name
-		ADDED from [com.google.android.gms:play-services-base:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/AndroidManifest.xml:19:19-85
-meta-data#android.support.VERSION
-ADDED from [com.android.support:support-v4:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-v4/26.0.0-alpha1/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.0.0-alpha1/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/26.0.0-alpha1/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/26.0.0-alpha1/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/26.0.0-alpha1/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-fragment/26.0.0-alpha1/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-v13:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-v13/26.0.0-alpha1/AndroidManifest.xml:25:5-27:41
-	android:value
-		ADDED from [com.android.support:support-v4:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-v4/26.0.0-alpha1/AndroidManifest.xml:27:9-38
-	android:name
-		ADDED from [com.android.support:support-v4:26.0.0-alpha1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.android.support/support-v4/26.0.0-alpha1/AndroidManifest.xml:26:9-47
-uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.6.1/AndroidManifest.xml:21:5-77
-	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.6.1/AndroidManifest.xml:21:19-51
-	android:required
-		ADDED from [com.google.android.gms:play-services-maps:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.6.1/AndroidManifest.xml:21:52-75
-receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:25:7-26:18
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/AndroidManifest.xml:25:7-26:18
-	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:25:90-112
-	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:25:113-137
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:25:17-89
-receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
-ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:27:7-31:18
-	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:27:162-184
-	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:27:105-161
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:27:17-104
-intent-filter#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:28:11-30:27
-action#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:29:15-76
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:29:23-74
-service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:32:7-137
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/AndroidManifest.xml:27:7-137
-	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:32:88-110
-	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:32:111-135
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:32:16-87
-provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/AndroidManifest.xml:6:9-175
+		INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml
+provider#com.crashlytics.android.CrashlyticsInitProvider
+ADDED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\lenovo\.gradle\caches\transforms-3\e7749fee1f892c544d463747f92e2fa5\transformed\crashlytics-2.10.1\AndroidManifest.xml:19:9-23:38
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/AndroidManifest.xml:6:19-78
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\lenovo\.gradle\caches\transforms-3\e7749fee1f892c544d463747f92e2fa5\transformed\crashlytics-2.10.1\AndroidManifest.xml:21:13-75
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/AndroidManifest.xml:6:125-149
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\lenovo\.gradle\caches\transforms-3\e7749fee1f892c544d463747f92e2fa5\transformed\crashlytics-2.10.1\AndroidManifest.xml:22:13-37
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/AndroidManifest.xml:6:150-173
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\lenovo\.gradle\caches\transforms-3\e7749fee1f892c544d463747f92e2fa5\transformed\crashlytics-2.10.1\AndroidManifest.xml:23:13-35
 	android:name
-		ADDED from [com.google.firebase:firebase-common:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/AndroidManifest.xml:6:79-124
-receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:30:9-36:20
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\lenovo\.gradle\caches\transforms-3\e7749fee1f892c544d463747f92e2fa5\transformed\crashlytics-2.10.1\AndroidManifest.xml:20:13-75
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\9a5ccaa6279f6163d4f4a499cb191352\transformed\play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\9a5ccaa6279f6163d4f4a499cb191352\transformed\play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\9a5ccaa6279f6163d4f4a499cb191352\transformed\play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+queries
+ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\9a5ccaa6279f6163d4f4a499cb191352\transformed\play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
+package#com.google.android.apps.maps
+ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\9a5ccaa6279f6163d4f4a499cb191352\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\9a5ccaa6279f6163d4f4a499cb191352\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\9a5ccaa6279f6163d4f4a499cb191352\transformed\play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\9a5ccaa6279f6163d4f4a499cb191352\transformed\play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\9a5ccaa6279f6163d4f4a499cb191352\transformed\play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\e408576350cf2894c212745de942c119\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:30:85-108
-	android:permission
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:30:109-169
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\e408576350cf2894c212745de942c119\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\e408576350cf2894c212745de942c119\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:30:19-84
-intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:31:13-35:29
-category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:34:17-60
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\e408576350cf2894c212745de942c119\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\b4c69e6d8061700e8591f615f65ac034\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\b4c69e6d8061700e8591f615f65ac034\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:34:27-58
-receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
-ADDED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:40:9-119
-	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:40:93-117
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:40:19-92
-service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:44:9-48:19
-	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:44:83-106
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:44:18-82
-intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:45:13-47:29
-	android:priority
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:45:28-51
-action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:46:17-79
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Volumes/d/WorkSpaces_Projects/Parth/31_dec_2016_noon/Phase2/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:46:25-77
+		ADDED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-3\b4c69e6d8061700e8591f615f65ac034\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
