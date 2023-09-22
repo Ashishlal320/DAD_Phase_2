@@ -1,5 +1,6 @@
 package com.dad.registration.fragment;
 
+import com.dad.BuildConfig;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
@@ -20,6 +21,7 @@ import com.dad.simplecropping.CameraUtil;
 import com.dad.simplecropping.Constants;
 import com.dad.util.Preference;
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.AlertDialog;
@@ -35,9 +37,11 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.provider.MediaStore;
+import android.provider.Settings;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -50,6 +54,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
+import androidx.core.content.FileProvider;
 import androidx.core.graphics.drawable.RoundedBitmapDrawable;
 import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
 
@@ -237,7 +244,7 @@ public class CreateAccountFragment extends BaseFragment {
                 if (path == null) {
                     return;
                 }
-              /*  Glide.with(this).load(imageFile).asBitmap().centerCrop().into(new BitmapImageViewTarget(imProfile) {
+               Glide.with(this).asBitmap().load(imageFile).centerCrop().into(new BitmapImageViewTarget(imProfile) {
                     @Override
                     protected void setResource(Bitmap resource) {
                         final RoundedBitmapDrawable circularBitmapDrawable = RoundedBitmapDrawableFactory.create(getResources(), resource);
@@ -245,7 +252,7 @@ public class CreateAccountFragment extends BaseFragment {
                         imProfile.setImageDrawable(circularBitmapDrawable);
                         isImageUpdated = true;
                     }
-                });*/
+                });
 
                 break;
         }
@@ -266,7 +273,11 @@ public class CreateAccountFragment extends BaseFragment {
 
                 if (items[item].equals(getString(R.string.TAG_TAKE_PHOTO))) {
                     userChoosenTask = getString(R.string.TAG_TAKE_PHOTO);
-                    gotoCamera();
+                    if (checkMyPermission(getActivity())) {
+                        gotoCamera();
+                    } else {
+                        permissions(getActivity());
+                    }
 //
 
 
@@ -288,7 +299,13 @@ public class CreateAccountFragment extends BaseFragment {
         final Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         try {
             imageFile = CameraUtil.getOutputMediaFile(1);
-            final Uri mImageCaptureUri = Uri.fromFile(imageFile);
+           // final Uri mImageCaptureUri = Uri.fromFile(imageFile);
+            final Uri mImageCaptureUri; //= Uri.fromFile(imageFile);
+            if (Build.VERSION.SDK_INT >= 24) {
+                mImageCaptureUri = FileProvider.getUriForFile(getActivity(), BuildConfig.APPLICATION_ID + ".provider", imageFile);
+            } else {
+                mImageCaptureUri = Uri.fromFile(imageFile);
+            }
             intent.putExtra(MediaStore.EXTRA_OUTPUT, mImageCaptureUri);
             intent.putExtra("return-data", true);
             startActivityForResult(intent, Constants.REQUEST_CODE_TAKE_PICTURE);
@@ -736,4 +753,46 @@ public class CreateAccountFragment extends BaseFragment {
         alarmManagerForBLE.setInexactRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP, SystemClock.elapsedRealtime(), 2 * 60 * SCAN_PERIOD, broadcastIntentBle);
     }
 
+
+
+    public  boolean checkMyPermission(Context mContext) {
+        int permissionChecExternal = ContextCompat.checkSelfPermission(mContext, Manifest.permission.READ_EXTERNAL_STORAGE);
+        int permissionChecInternal = ContextCompat.checkSelfPermission(mContext, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        int permissionChecCamera = ContextCompat.checkSelfPermission(mContext, Manifest.permission.CAMERA);
+        return permissionChecExternal == 0 && permissionChecInternal == 0 && permissionChecCamera == 0;
+    }
+
+    public  void permissions(Context mContext) {
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+
+            if (!Settings.System.canWrite(mContext)) {
+                ((Activity) mContext).requestPermissions(new String[]{Manifest.permission.CAMERA,
+                        Manifest.permission.READ_EXTERNAL_STORAGE,
+                        Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA}, 4);
+            }
+
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
+                                           @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        if (requestCode == 4) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                Log.e("value", "Permission Granted, Now you can use local drive .");
+                gotoCamera();
+            } else {
+                Log.e("value", "Permission Denied, You cannot use local drive .      ");
+                Toast.makeText(getActivity(), "Permission Denied, You cannot use local drive", Toast.LENGTH_SHORT).show();
+
+            }
+        } else {
+            Log.e("value", "Permission Denied, You cannot use local drive .     1 " + requestCode);
+        }
+    }
+
 }
+

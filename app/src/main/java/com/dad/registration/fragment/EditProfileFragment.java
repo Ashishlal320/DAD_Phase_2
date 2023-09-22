@@ -21,19 +21,23 @@ import com.dad.util.CircleTransform;
 import com.dad.util.Preference;
 import com.squareup.picasso.Picasso;
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.provider.Settings;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -44,6 +48,7 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -52,6 +57,8 @@ import java.util.Locale;
 
 import static android.app.Activity.RESULT_OK;
 
+import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
 import androidx.core.graphics.drawable.RoundedBitmapDrawable;
 import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
@@ -152,13 +159,10 @@ public class EditProfileFragment extends BaseFragment {
 
         imgUrl = imgUrl + uset_id;
 
-       try {
-           Glide.with(getActivity())
-                   .load(imgUrl)
-                   .into(ivProfile);
-       }
-       catch (Exception e)
-       {}
+        try {
+            Glide.with(getActivity()).load(imgUrl).into(ivProfile);
+        } catch (Exception e) {
+        }
 
 
         cbToggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -524,18 +528,19 @@ public class EditProfileFragment extends BaseFragment {
     }
 
     private void selectImage() {
-        final CharSequence[] items = {getString(R.string.TAG_TAKE_PHOTO), getString(R.string.TAG_CHOOSE_FROM_GALLERY),
-                getString(R.string.fragment_create_account_tv_cancel)};
+        final CharSequence[] items = {getString(R.string.TAG_TAKE_PHOTO), getString(R.string.TAG_CHOOSE_FROM_GALLERY), getString(R.string.fragment_create_account_tv_cancel)};
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(getString(R.string.TAG_ADD_Photo));
         builder.setItems(items, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int item) {
-
                 if (items[item].equals(getString(R.string.TAG_TAKE_PHOTO))) {
                     userChoosenTask = getString(R.string.TAG_TAKE_PHOTO);
-                    gotoCamera();
-
+                    if (checkMyPermission(getActivity())) {
+                        gotoCamera();
+                    } else {
+                        permissions(getActivity());
+                    }
 
                 } else if (items[item].equals(getString(R.string.TAG_CHOOSE_FROM_GALLERY))) {
                     userChoosenTask = getString(R.string.TAG_CHOOSE_FROM_GALLERY);
@@ -557,8 +562,7 @@ public class EditProfileFragment extends BaseFragment {
             imageFile = CameraUtil.getOutputMediaFile(1);
             final Uri mImageCaptureUri; //= Uri.fromFile(imageFile);
             if (Build.VERSION.SDK_INT >= 24) {
-                mImageCaptureUri = FileProvider.getUriForFile(getActivity(),
-                        BuildConfig.APPLICATION_ID + ".provider", imageFile);
+                mImageCaptureUri = FileProvider.getUriForFile(getActivity(), BuildConfig.APPLICATION_ID + ".provider", imageFile);
             } else {
                 mImageCaptureUri = Uri.fromFile(imageFile);
             }
@@ -943,11 +947,50 @@ public class EditProfileFragment extends BaseFragment {
                 dialog.dismiss();
                 Intent intent = new Intent();
                 intent.putExtra(com.dad.util.Constants.Extras.FORCE_LOGOUT, true);
-                                getTargetFragment().onActivityResult(com.dad.util.Constants.REQUEST_CODES.FORCE_LOGOUT, RESULT_OK, intent);
+                getTargetFragment().onActivityResult(com.dad.util.Constants.REQUEST_CODES.FORCE_LOGOUT, RESULT_OK, intent);
                 getFragmentManager().popBackStack();
             }
         });
         dialog.show();
+    }
+
+    public static boolean checkMyPermission(Context mContext) {
+        int permissionChecExternal = ContextCompat.checkSelfPermission(mContext, Manifest.permission.READ_EXTERNAL_STORAGE);
+        int permissionChecInternal = ContextCompat.checkSelfPermission(mContext, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        int permissionChecCamera = ContextCompat.checkSelfPermission(mContext, Manifest.permission.CAMERA);
+        return permissionChecExternal == 0 && permissionChecInternal == 0 && permissionChecCamera == 0;
+    }
+
+    public static void permissions(Context mContext) {
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+
+            if (!Settings.System.canWrite(mContext)) {
+                ((Activity) mContext).requestPermissions(new String[]{Manifest.permission.CAMERA,
+                        Manifest.permission.READ_EXTERNAL_STORAGE,
+                        Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA}, 4);
+            }
+
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
+                                           @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        if (requestCode == 4) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                Log.e("value", "Permission Granted, Now you can use local drive .");
+                gotoCamera();
+            } else {
+                Log.e("value", "Permission Denied, You cannot use local drive .      ");
+                Toast.makeText(dadApplication, "Permission Denied, You cannot use local drive", Toast.LENGTH_SHORT).show();
+
+            }
+        } else {
+            Log.e("value", "Permission Denied, You cannot use local drive .     1 " + requestCode);
+        }
     }
 
 }
