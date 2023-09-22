@@ -1,8 +1,8 @@
 package com.dad.registration.fragment;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.target.BitmapImageViewTarget;
+import com.dad.BuildConfig;
 import com.dad.DADApplication;
 import com.dad.R;
 import com.dad.cropimage.CropImage;
@@ -19,6 +19,7 @@ import com.dad.simplecropping.CameraUtil;
 import com.dad.simplecropping.Constants;
 import com.dad.util.CircleTransform;
 import com.dad.util.Preference;
+import com.squareup.picasso.Picasso;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -30,6 +31,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.text.method.PasswordTransformationMethod;
@@ -50,6 +52,7 @@ import java.util.Locale;
 
 import static android.app.Activity.RESULT_OK;
 
+import androidx.core.content.FileProvider;
 import androidx.core.graphics.drawable.RoundedBitmapDrawable;
 import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
 
@@ -149,9 +152,13 @@ public class EditProfileFragment extends BaseFragment {
 
         imgUrl = imgUrl + uset_id;
 
-        Glide.with(EditProfileFragment.this)
-                .load(imgUrl)
-                .into(ivProfile);
+       try {
+           Glide.with(getActivity())
+                   .load(imgUrl)
+                   .into(ivProfile);
+       }
+       catch (Exception e)
+       {}
 
 
         cbToggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -473,7 +480,7 @@ public class EditProfileFragment extends BaseFragment {
                 if (path == null) {
                     return;
                 }
-               /* Glide.with(this).load(imageFile).asBitmap().centerCrop().into(new BitmapImageViewTarget(ivProfile) {
+                Glide.with(getActivity()).asBitmap().load(imageFile).centerCrop().into(new BitmapImageViewTarget(ivProfile) {
                     @Override
                     protected void setResource(Bitmap resource) {
                         final RoundedBitmapDrawable circularBitmapDrawable = RoundedBitmapDrawableFactory.create(getResources(), resource);
@@ -481,7 +488,7 @@ public class EditProfileFragment extends BaseFragment {
                         ivProfile.setImageDrawable(circularBitmapDrawable);
                         isImageUpdated = true;
                     }
-                });*/
+                });
 
                 break;
         }
@@ -548,7 +555,13 @@ public class EditProfileFragment extends BaseFragment {
         final Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         try {
             imageFile = CameraUtil.getOutputMediaFile(1);
-            final Uri mImageCaptureUri = Uri.fromFile(imageFile);
+            final Uri mImageCaptureUri; //= Uri.fromFile(imageFile);
+            if (Build.VERSION.SDK_INT >= 24) {
+                mImageCaptureUri = FileProvider.getUriForFile(getActivity(),
+                        BuildConfig.APPLICATION_ID + ".provider", imageFile);
+            } else {
+                mImageCaptureUri = Uri.fromFile(imageFile);
+            }
             intent.putExtra(MediaStore.EXTRA_OUTPUT, mImageCaptureUri);
             intent.putExtra("return-data", true);
             startActivityForResult(intent, Constants.REQUEST_CODE_TAKE_PICTURE);

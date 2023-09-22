@@ -84,7 +84,7 @@
     <string name="fragment_create_account_tv_cancel">Cancel</string>
     <string name="fragment_create_account_tv_new_account">New Account</string>
     <string name="fragment_create_account_tv_save">Save</string>
-    <string name="fragment_create_account_tv_check_entries">"Check Enteries"</string>
+    <string name="fragment_create_account_tv_check_entries">"Check Entries"</string>
     <string name="fragment_create_account_tv_show">"<u>Show</u>"</string>
     <string name="fragment_registration_create_tv_hide">"<u>Hide</u>"</string>
 
