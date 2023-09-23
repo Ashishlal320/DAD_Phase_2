@@ -244,7 +244,7 @@ public class CreateAccountFragment extends BaseFragment {
                 if (path == null) {
                     return;
                 }
-               Glide.with(this).asBitmap().load(imageFile).centerCrop().into(new BitmapImageViewTarget(imProfile) {
+                Glide.with(this).asBitmap().load(imageFile).centerCrop().into(new BitmapImageViewTarget(imProfile) {
                     @Override
                     protected void setResource(Bitmap resource) {
                         final RoundedBitmapDrawable circularBitmapDrawable = RoundedBitmapDrawableFactory.create(getResources(), resource);
@@ -299,7 +299,7 @@ public class CreateAccountFragment extends BaseFragment {
         final Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         try {
             imageFile = CameraUtil.getOutputMediaFile(1);
-           // final Uri mImageCaptureUri = Uri.fromFile(imageFile);
+            // final Uri mImageCaptureUri = Uri.fromFile(imageFile);
             final Uri mImageCaptureUri; //= Uri.fromFile(imageFile);
             if (Build.VERSION.SDK_INT >= 24) {
                 mImageCaptureUri = FileProvider.getUriForFile(getActivity(), BuildConfig.APPLICATION_ID + ".provider", imageFile);
@@ -503,7 +503,7 @@ public class CreateAccountFragment extends BaseFragment {
                     } else {
 
                         Toast.makeText(getActivity(), getString(R.string.TAG_REG_SUC_MSG), Toast.LENGTH_SHORT).show();
-                       ((MainActivity) getActivity()).replaceFragment(new DashBoardWithSwipableFragment());
+                        ((MainActivity) getActivity()).replaceFragment(new DashBoardWithSwipableFragment());
                     }
 
                 } else {
@@ -582,6 +582,8 @@ public class CreateAccountFragment extends BaseFragment {
                     ((MainActivity) getActivity()).replaceFragment(new DashBoardWithSwipableFragment());
 //                    replaceChildFragment(new DashBoardWithSwipableFragment(), R.id.activity_registartion_fl_container);
 
+                } else {
+                    displayDialog(getActivity(), getString(R.string.app_name), "Something is wrong, Please check again.", getString(R.string.TAG_OK));
                 }
             }
 
@@ -754,15 +756,14 @@ public class CreateAccountFragment extends BaseFragment {
     }
 
 
-
-    public  boolean checkMyPermission(Context mContext) {
+    public boolean checkMyPermission(Context mContext) {
         int permissionChecExternal = ContextCompat.checkSelfPermission(mContext, Manifest.permission.READ_EXTERNAL_STORAGE);
         int permissionChecInternal = ContextCompat.checkSelfPermission(mContext, Manifest.permission.WRITE_EXTERNAL_STORAGE);
         int permissionChecCamera = ContextCompat.checkSelfPermission(mContext, Manifest.permission.CAMERA);
         return permissionChecExternal == 0 && permissionChecInternal == 0 && permissionChecCamera == 0;
     }
 
-    public  void permissions(Context mContext) {
+    public void permissions(Context mContext) {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
 

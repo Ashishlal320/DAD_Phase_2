@@ -214,6 +214,10 @@ uses-feature#android.hardware.location.gps
 ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:30:5-66
 	android:name
 		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:30:19-63
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:31:5-80
+	android:name
+		ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:31:22-77
 permission#com.tigerlight.dad.permission.C2D_MESSAGE
 ADDED from F:\Android _Projects\Appnox\DAD_Phase_2\app\src\main\AndroidManifest.xml:32:5-34:47
 	android:protectionLevel

@@ -917,7 +917,9 @@ public class EditProfileFragment extends BaseFragment {
 
         @Override
         protected Void doInBackground(Void... voids) {
-            wsUploadImage.executeService(path);
+            if (wsUploadImage!=null) {
+                wsUploadImage.executeService(path);
+            }
             return null;
         }
 
@@ -931,6 +933,8 @@ public class EditProfileFragment extends BaseFragment {
             if (!isCancelled()) {
                 if (wsUploadImage.isSuccess()) {
                     displayDialog(getActivity(), getString(R.string.app_name), getString(R.string.TAG_PROFILE_UPDATED_MSG), getString(R.string.TAG_OK));
+                } else {
+                    displayDialog(getActivity(), getString(R.string.app_name), "Something is wrong, Please check again.", getString(R.string.TAG_OK));
                 }
             }
         }
