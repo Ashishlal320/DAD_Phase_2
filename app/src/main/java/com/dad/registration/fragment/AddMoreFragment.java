@@ -14,6 +14,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.ContactsContract;
@@ -28,11 +29,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.core.content.ContextCompat;
+import androidx.core.content.FileProvider;
 import androidx.core.graphics.drawable.RoundedBitmapDrawable;
 import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.BitmapImageViewTarget;
+import com.dad.BuildConfig;
 import com.dad.R;
 import com.dad.cropimage.CropImage;
 import com.dad.home.BaseFragment;
@@ -230,7 +233,7 @@ public class AddMoreFragment extends BaseFragment {
                 if (path == null) {
                     return;
                 }
-               /* Glide.with(this).load(imageFile).asBitmap().centerCrop().into(new BitmapImageViewTarget(ivProfilePic) {
+             Glide.with(this).asBitmap().load(imageFile).centerCrop().into(new BitmapImageViewTarget(ivProfilePic) {
                     @Override
                     protected void setResource(Bitmap resource) {
                         final RoundedBitmapDrawable circularBitmapDrawable = RoundedBitmapDrawableFactory.create(getResources(), resource);
@@ -238,7 +241,7 @@ public class AddMoreFragment extends BaseFragment {
                         ivProfilePic.setImageDrawable(circularBitmapDrawable);
                         isImageUpdated = true;
                     }
-                });*/
+                });
 
                 break;
 
@@ -550,7 +553,13 @@ public class AddMoreFragment extends BaseFragment {
         final Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         try {
             imageFile = CameraUtil.getOutputMediaFile(1);
-            final Uri mImageCaptureUri = Uri.fromFile(imageFile);
+            //final Uri mImageCaptureUri = Uri.fromFile(imageFile);
+            final Uri mImageCaptureUri; //= Uri.fromFile(imageFile);
+            if (Build.VERSION.SDK_INT >= 24) {
+                mImageCaptureUri = FileProvider.getUriForFile(getActivity(), BuildConfig.APPLICATION_ID + ".provider", imageFile);
+            } else {
+                mImageCaptureUri = Uri.fromFile(imageFile);
+            }
             intent.putExtra(MediaStore.EXTRA_OUTPUT, mImageCaptureUri);
             intent.putExtra("return-data", true);
             startActivityForResult(intent, Constants.REQUEST_CODE_TAKE_PICTURE);
