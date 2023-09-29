@@ -24,6 +24,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -34,11 +35,16 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.PackageManager;
 import android.graphics.drawable.ColorDrawable;
+import android.location.Address;
+import android.location.Geocoder;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -49,7 +55,12 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
+
+import java.io.IOException;
+import java.util.List;
+import java.util.Locale;
 
 /**
  * AlertFragment : all alert listing
@@ -99,11 +110,15 @@ public class AlertFragment extends BaseFragment implements AdapterView.OnItemCli
 
     @Override
     public void initView(View view) {
-        callResetCount();
-
         tvSendDanger = (TextView) view.findViewById(R.id.fragment_alert_tvSendDanger);
         tvEmptyAlert = (TextView) view.findViewById(R.id.fragment_alert_tvEmptyView);
         swCrowdALert = (Switch) view.findViewById(R.id.fragment_alert_swCrowdAlert);
+
+        if (!checkMyPermission(getActivity())) {
+            permissions(getActivity());
+        } else {
+            callResetCount();
+        }
 
         if (Preference.getInstance().mSharedPreferences.getBoolean(Constant.IS_CHECKED, false)) {
             swCrowdALert.setChecked(true);
@@ -143,24 +158,20 @@ public class AlertFragment extends BaseFragment implements AdapterView.OnItemCli
     }
 
     @Override
-    public void onAttach(Context context)
-    {
+    public void onAttach(Context context) {
         super.onAttach(context);
 
-        if (!mIsSentAlertReceiverRegistered)
-        {
+        if (!mIsSentAlertReceiverRegistered) {
             context.registerReceiver(mAlertSentReceiver, new IntentFilter(Constants.Actions.SENT_ALERT_ACTION));
             mIsSentAlertReceiverRegistered = true;
         }
     }
 
     @Override
-    public void onDetach()
-    {
+    public void onDetach() {
         super.onDetach();
 
-        if (mIsSentAlertReceiverRegistered)
-        {
+        if (mIsSentAlertReceiverRegistered) {
             getActivity().unregisterReceiver(mAlertSentReceiver);
             mIsSentAlertReceiverRegistered = false;
         }
@@ -356,8 +367,7 @@ public class AlertFragment extends BaseFragment implements AdapterView.OnItemCli
     };
 
     @Override
-    public void onViewStateRestored(Bundle savedInstanceState)
-    {
+    public void onViewStateRestored(Bundle savedInstanceState) {
         super.onViewStateRestored(savedInstanceState);
         updateTestModeSwitch();
     }
@@ -747,8 +757,7 @@ public class AlertFragment extends BaseFragment implements AdapterView.OnItemCli
 
     }
 
-    private void sendAlert(final AsyncTask<Void, Void, Void> task)
-    {
+    private void sendAlert(final AsyncTask<Void, Void, Void> task) {
         progressDialog = ProgressDialog.show(getActivity(), "", getString(R.string.TAG_SENDING_ALERT));
         progressDialog.show();
 
@@ -757,39 +766,30 @@ public class AlertFragment extends BaseFragment implements AdapterView.OnItemCli
 
         getActivity().stopService(serviceIntent);
         getActivity().startService(serviceIntent);
-        final CountDownTimer countDownTimer = new CountDownTimer(120000, 1000)
-        {
+        final CountDownTimer countDownTimer = new CountDownTimer(120000, 1000) {
             @Override
-            public void onTick(long millisUntilFinished)
-            {
+            public void onTick(long millisUntilFinished) {
                 int accuracy = Preference.getInstance().mSharedPreferences.getInt(Constant.COMMON_ACCURACY, 0);
-                //Log.d(TAG, "Location Accuracy = " + accuracy);
+                Log.d(TAG, "Current Location Accuracy = " + accuracy);
 
-                if (accuracy >= Constants.MINIMUM_ACCEPTABLE_ACCURACY)
-                {
+                if (accuracy >= Constants.MINIMUM_ACCEPTABLE_ACCURACY) {
                     cancel();
                     onFinish();
                 }
             }
 
             @Override
-            public void onFinish()
-            {
-                if (task.getStatus() == AsyncTask.Status.FINISHED)
-                {
+            public void onFinish() {
+                if (task.getStatus() == AsyncTask.Status.FINISHED) {
                     Log.e(TAG, "Trying to execute duplicate task.");
-                }
-                else
-                {
+                } else {
                     task.execute();
                 }
                 //Stop the LocationService after allowing a few seconds to ensure that the service has time connect. This is necessary since the accuracy could already meet the criteria from a request. It will automatically be restarted by the repeating AlarmManager every 1 minute.
                 Handler handler = new Handler();
-                handler.postDelayed(new Runnable()
-                {
+                handler.postDelayed(new Runnable() {
                     @Override
-                    public void run()
-                    {
+                    public void run() {
                         getActivity().stopService(serviceIntent);
                     }
                 }, 3000);
@@ -1002,27 +1002,62 @@ public class AlertFragment extends BaseFragment implements AdapterView.OnItemCli
     }
 
 
-    private BroadcastReceiver mAlertSentReceiver = new BroadcastReceiver()
-    {
+    private BroadcastReceiver mAlertSentReceiver = new BroadcastReceiver() {
         @Override
-        public void onReceive(Context context, Intent intent)
-        {
+        public void onReceive(Context context, Intent intent) {
             updateTestModeValue(false);
             updateTestModeSwitch();
         }
     };
 
-    private void updateTestModeValue(boolean isChecked)
-    {
+    private void updateTestModeValue(boolean isChecked) {
         Preference.getInstance().mSharedPreferences.edit().putBoolean(Constant.IS_TEST_MODE, isChecked).commit();
         updateTestModeSwitch();
     }
 
-    private void updateTestModeSwitch()
-    {
-        boolean isInTestMode =  Preference.getInstance().mSharedPreferences.getBoolean(Constant.IS_TEST_MODE, false);
+    private void updateTestModeSwitch() {
+        boolean isInTestMode = Preference.getInstance().mSharedPreferences.getBoolean(Constant.IS_TEST_MODE, false);
         swTestMode.setOnCheckedChangeListener(null);
         swTestMode.setChecked(isInTestMode);
         swTestMode.setOnCheckedChangeListener(mTestModeOnCheckChangeListener);
+    }
+
+    public static boolean checkMyPermission(Context mContext) {
+        int permissionACCESS_FINE_LOCATION = ContextCompat.checkSelfPermission(mContext, Manifest.permission.ACCESS_FINE_LOCATION);
+        int permissionACCESS_COARSE_LOCATION = ContextCompat.checkSelfPermission(mContext, Manifest.permission.ACCESS_COARSE_LOCATION);
+        return permissionACCESS_FINE_LOCATION == 0 && permissionACCESS_COARSE_LOCATION == 0;
+    }
+
+    public static void permissions(Context mContext) {
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+
+            if (!Settings.System.canWrite(mContext)) {
+                ((Activity) mContext).requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
+                        Manifest.permission.ACCESS_COARSE_LOCATION,
+                }, 4);
+            }
+
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
+                                           @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        if (requestCode == 4) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                Log.e("value", "Permission Granted, Now you can access your location .");
+                Toast.makeText(getActivity(), "Permission Granted, Now you can access your location", Toast.LENGTH_SHORT).show();
+
+                callResetCount();
+            } else {
+                Log.e("value", "Permission Denied, You cannot access your location .      ");
+                Toast.makeText(getActivity(), "Permission Denied, You cannot access your location", Toast.LENGTH_SHORT).show();
+            }
+        } else {
+            Log.e("value", "Permission Denied .     1 " + requestCode);
+        }
     }
 }

@@ -2,18 +2,27 @@ package com.dad.util;
 
 import com.dad.registration.util.Constant;
 
+import android.Manifest;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Service;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.provider.Settings;
 import android.util.Log;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 public class GPSTracker extends Service implements LocationListener {
 
@@ -31,7 +40,11 @@ public class GPSTracker extends Service implements LocationListener {
 
     public GPSTracker(Context context) {
         this.mContext = context;
-        getLocation();
+        if (!checkMyPermission(context)) {
+            permissions(context);
+        } else {
+            getLocation();
+        }
     }
 
     public Location getLocation() {
@@ -47,11 +60,15 @@ public class GPSTracker extends Service implements LocationListener {
             isNetworkEnabled = locationManager
                     .isProviderEnabled(LocationManager.NETWORK_PROVIDER);
 
-            if (!isGPSEnabled && !isNetworkEnabled) {
+            //if (!isGPSEnabled && !isNetworkEnabled) {
+            if (!isNetworkEnabled) {
                 // no network provider is enabled
+                Log.d("GPS current Location", "isNetworkEnabled " );
+
             } else {
                 this.canGetLocation = true;
                 if (isNetworkEnabled) {
+
                     locationManager.requestLocationUpdates(
                             LocationManager.NETWORK_PROVIDER,
                             MIN_TIME_BW_UPDATES,
@@ -81,9 +98,13 @@ public class GPSTracker extends Service implements LocationListener {
                                 latitude = location.getLatitude();
                                 longitude = location.getLongitude();
                             }
+
                         }
                     }
                 }
+
+                Log.d("GPS current Location", "GPS Enabled latitude- " + latitude);
+                Log.d("GPS current Location", "GPS Enabled longitude- " + longitude);
 
                 Preference.getInstance().savePreferenceData(Constant.COMMON_LATITUDE, String.valueOf(location.getLatitude()));
                 Preference.getInstance().savePreferenceData(Constant.COMMON_LONGITUDE, String.valueOf(location.getLongitude()));
@@ -192,5 +213,26 @@ public class GPSTracker extends Service implements LocationListener {
     public IBinder onBind(Intent arg0) {
         return null;
     }
+
+
+    public static boolean checkMyPermission(Context mContext) {
+        int permissionACCESS_FINE_LOCATION = ContextCompat.checkSelfPermission(mContext, Manifest.permission.ACCESS_FINE_LOCATION);
+        int permissionACCESS_COARSE_LOCATION = ContextCompat.checkSelfPermission(mContext, Manifest.permission.ACCESS_COARSE_LOCATION);
+        return permissionACCESS_FINE_LOCATION == 0 && permissionACCESS_COARSE_LOCATION == 0;
+    }
+
+    public static void permissions(Context mContext) {
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+
+            if (!Settings.System.canWrite(mContext)) {
+                ((Activity) mContext).requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
+                        Manifest.permission.ACCESS_COARSE_LOCATION,
+                }, 4);
+            }
+
+        }
+    }
+
 
 }
