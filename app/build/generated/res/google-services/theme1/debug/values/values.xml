@@ -4,7 +4,7 @@
     <string name="firebase_database_url" translatable="false">https://defense-alert-device.firebaseio.com</string>
     <string name="gcm_defaultSenderId" translatable="false">32989397760</string>
     <string name="google_api_key" translatable="false">AIzaSyBXSPvUbpw3wxdE-Ex9T_7OdTebkH7pmFI</string>
-    <string name="google_app_id" translatable="false">1:32989397760:android:b69d67d59bcd4ba9</string>
+    <string name="google_app_id" translatable="false">1:32989397760:android:1f672e85b3ad9aa10569e5</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBXSPvUbpw3wxdE-Ex9T_7OdTebkH7pmFI</string>
     <string name="google_storage_bucket" translatable="false">defense-alert-device.appspot.com</string>
     <string name="project_id" translatable="false">defense-alert-device</string>

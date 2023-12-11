@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.dad">
+    package="com.tigerlight">
 
     <!-- Accessing camera hardware -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -51,7 +51,7 @@
 
 
     <application
-        android:name=".DADApplication"
+        android:name="com.tigerlight.DADApplication"
         android:allowBackup="true"
         android:largeHeap="true"
         android:requestLegacyExternalStorage="true"
@@ -78,7 +78,7 @@
         </provider>
 
         <activity
-            android:name=".home.SplashActivity"
+            android:name="com.tigerlight.home.SplashActivity"
             android:alwaysRetainTaskState="true"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true"
@@ -91,14 +91,27 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".registration.activity.MainActivity"
+            android:name="com.tigerlight.registration.activity.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme" />
-        <activity android:name=".cropimage.CropImage" />
-        <activity android:name=".simplecropping.CropImage" />
+        <activity android:name="com.tigerlight.cropimage.CropImage" />
+        <activity android:name="com.tigerlight.simplecropping.CropImage" />
 
         <receiver
-            android:name=".GcmBroadcastReceiver"
+            android:name="com.tigerlight.MyAlertBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.tigerlight.dad" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.tigerlight.GcmBroadcastReceiver"
             android:exported="true"
             android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
@@ -110,21 +123,21 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".blework.BootReceiver"
+            android:name="com.tigerlight.blework.BootReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".blework.AlarmReceiver" />
-        <receiver android:name=".blework.BleReceiver" />
+        <receiver android:name="com.tigerlight.blework.AlarmReceiver" />
+        <receiver android:name="com.tigerlight.blework.BleReceiver" />
 
-        <service android:name=".blework.BleService" />
-        <service android:name=".GcmIntentService" />
+        <service android:name="com.tigerlight.blework.BleService" />
+        <service android:name="com.tigerlight.GcmIntentService" />
 
         <receiver
-            android:name=".AlarmServiceBroadcastReciever"
+            android:name="com.tigerlight.AlarmServiceBroadcastReciever"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -132,7 +145,7 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".BleBroadCast"
+            android:name="com.tigerlight.BleBroadCast"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -147,7 +160,7 @@
         <!-- android:icon="@drawable/app_icon" -->
         <!-- android:process=":LocationService" /> -->
 
-        <service android:name=".LocationBroadcastServiceNew" />
+        <service android:name="com.tigerlight.LocationBroadcastServiceNew" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -160,13 +173,25 @@
             android:value="eee033fbcb72caade0049fa3a01835d0764d3cfa" />
 
         <receiver
-            android:name=".recievers.AlertSentReceiver"
+            android:name="com.tigerlight.recievers.AlertSentReceiver"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.tigerlight.action.alert_sent" />
             </intent-filter>
         </receiver>
+
+
+
+        <service
+            android:name=".gcm.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
     </application>
 
 </manifest>
