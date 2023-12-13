@@ -5,7 +5,9 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.tigerlight.registration.activity.MainActivity;
 import com.tigerlight.registration.fragment.AlertDetailFragment;
@@ -29,12 +31,28 @@ public class GcmBroadcastReceiver extends WakefulBroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         if (CheckForeground.isInForeGround() && !CheckForeground.isThreatScreenVisible()) {
             updateInFront(context, intent);
+            Log.d("Logged by Subhash Rathour ", "onReceive: ForeGround");
 //            showNotification(context, intent);
             return;
         } else {
-
             showNotification(context, intent);
+            Log.d("Logged by Subhash Rathour ", "onReceive: Background");
         }
+
+       /* Bundle extras = intent.getExtras();
+        if (intent.hasExtra("gcm.notification.title")) {
+            String title = extras.getString("gcm.notification.title");
+        }
+        if (intent.hasExtra("gcm.notification.image")) {
+            String image = extras.getString("gcm.notification.image");
+        }
+        if (intent.hasExtra("gcm.notification.body")) {
+            String body = extras.getString("gcm.notification.body");
+        }*/
+
+
+        playAlertSound(context);
+
 
         //        if (CheckForeground.isInForeGround() && !CheckForeground.isThreatScreenVisible()) {
 //            updateInFront(context, intent);
@@ -75,7 +93,7 @@ public class GcmBroadcastReceiver extends WakefulBroadcastReceiver {
         alertDetailFragment.setArguments(bundle);
         CheckForeground.getActivity().getFragmentManager()
                 .beginTransaction().add(
-                R.id.activity_registartion_fl_container, alertDetailFragment, alertDetailFragment.getClass().getSimpleName())
+                        R.id.activity_registartion_fl_container, alertDetailFragment, alertDetailFragment.getClass().getSimpleName())
                 .addToBackStack(alertDetailFragment.getClass().getSimpleName()).commit();
         //addFragment(new AlertDetailFragment());
 
@@ -122,12 +140,19 @@ public class GcmBroadcastReceiver extends WakefulBroadcastReceiver {
         intent.putExtra(Constant.JSON_OBJECT, jsonObject);
         PendingIntent contentIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_MUTABLE | PendingIntent.FLAG_ONE_SHOT);
 
-        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(context).setSmallIcon(R.drawable.app_icon).setContentTitle("D.A.D.").setContentText(safeDangerString);
+        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(context).setSmallIcon(R.drawable.app_icon).setContentTitle("D.A.D. Subhash").setContentText(safeDangerString);
         mBuilder.setContentIntent(contentIntent);
         mBuilder.setDefaults(Notification.DEFAULT_SOUND);
         mBuilder.setAutoCancel(true);
         NotificationManager mNotificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
         mNotificationManager.notify(1, mBuilder.build());
+    }
+
+    private void playAlertSound(Context context) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(context, R.raw.siren);
+        mediaPlayer.start();
+        // Release the MediaPlayer resources after playback
+        mediaPlayer.setOnCompletionListener(MediaPlayer::release);
     }
 }
 

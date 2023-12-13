@@ -9,6 +9,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.core.app.NotificationCompat;
 import androidx.legacy.content.WakefulBroadcastReceiver;
@@ -28,8 +29,10 @@ public class MyAlertBroadcastReceiver extends WakefulBroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
+        Log.d("Logged by Subhash Rathour ", "onReceive: "+intent);
         if (CheckForeground.isInForeGround() && !CheckForeground.isThreatScreenVisible()) {
             updateInFront(context, intent);
+            playAlertSound(context);
 //            showNotification(context, intent);
             return;
         } else {
@@ -67,7 +70,7 @@ public class MyAlertBroadcastReceiver extends WakefulBroadcastReceiver {
         if (data == null) {
             data = extras.getString("gcm.notification.alert");
         }
-        if (data == null) {
+      if (data == null) {
             return;
         }
         try {

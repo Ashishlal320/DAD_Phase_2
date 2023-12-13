@@ -97,18 +97,18 @@
         <activity android:name="com.tigerlight.cropimage.CropImage" />
         <activity android:name="com.tigerlight.simplecropping.CropImage" />
 
-        <receiver
+       <!-- <receiver
             android:name="com.tigerlight.MyAlertBroadcastReceiver"
             android:exported="true"
             android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-                <!-- Receives the registration id. -->
+                &lt;!&ndash; Receives the registration id. &ndash;&gt;
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
 
                 <category android:name="com.tigerlight.dad" />
             </intent-filter>
-        </receiver>
+        </receiver>-->
 
         <receiver
             android:name="com.tigerlight.GcmBroadcastReceiver"
