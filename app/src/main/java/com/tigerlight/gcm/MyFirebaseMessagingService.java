@@ -43,13 +43,15 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 sendNotification(title, body);
             }
+            playAlertSound(getApplicationContext());
+
         }
     }
 
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     private void sendNotification(String title, String body) {
-        playAlertSound(getApplicationContext());
+       // playAlertSound(getApplicationContext());
         // Create an Intent for the notification's click action (if required)
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
